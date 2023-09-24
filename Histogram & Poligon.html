@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Math</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="body2">
+    <!-- Load -->
+    <div id="loader"></div>
+
+    <!-- Parallax -->
+    <header class="parallax-head2">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand fs-4" style="font-family: diary" href="#"> Math Statiska</a>
+          <!-- Toggle Button -->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- SideBar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- Sidebar Header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Math Statiska</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- Sidebar Body -->
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-1 fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#Tabel_distribusi_frekuensi">Distribusi Frekuensi</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="Histogram & Poligon.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Histogram & Poligon </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#step">Tahapan-Tahapan</a></li>
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html#histogram">Histogram & Poligon</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ogive </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="ogive.html#ogive">Ogive</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Naik</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Turun</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="header-content text-center">
+          <a href="#">
+            <img src="logo smandong.png" width="300" class="d-block mx-auto" />
+          </a>
+          <h3 class="text-center text-light" style="font-family: roza">Histogram & Poligon</h3>
+          <a href="#histogram">
+            <div class="scroll-down"></div>
+          </a>
+        </div>
+      </div>
+      <!-- end of container -->
+    </header>
+
+    <!-- content 1 -->
+    <div class="container" id="step">
+      <div class="row content pt-md-2 text-center text-dark" style="background-color: #fff; padding-top: -320px">
+        <div class="col-md-4">
+          <img data-aos="zoom-in" src="one-unscreen.gif" alt="" width="100px" height="100px" />
+          <p data-aos="zoom-in" style="text-align: justify">Menentukan tepi atas, tepi bawah dan titik tengah masing-masing kelas kemudian diletakkan di sumbu-x.</p>
+        </div>
+        <div class="col-md-4">
+          <img data-aos="zoom-in" src="two-unscreen.gif" alt="" width="100px" height="100px" />
+          <p data-aos="zoom-in" style="text-align: justify">Membuat sumbu-y yang akan diisi dengan frekuensi menggunakan kelipatan 10.</p>
+        </div>
+        <div class="col-md-4">
+          <img data-aos="zoom-in" src="three-unscreen.gif" alt="" width="100px" height="100px" />
+          <p data-aos="zoom-in" style="text-align: justify">Membuat grafik batangnya sesuai dengan frekuensi dan kelas yang sudah ditentukan.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- content 2 -->
+    <div class="container text-light" id="histogram" style="margin-top: 150px">
+      <div class="content row p-3" data-aos="fade-up">
+        <!-- left side -->
+        <div class="col-md-6 left">
+          <h1 class="primary-color text-center">Histogram & Poligon</h1>
+          <p class="pt-3 mx-auto" style="text-align: justify">
+            Histogram adalah penyajian distribusi frekuensi menggunakan diagram batang tegak. Pada histogram, antara dua batang yang berdampingan tidak terdapat jarak, berbeda dengan penyajian diagram batang terdahulu. Sumbu datar pada
+            histogram menyatakan kelas-kelas interval, sedangkan sumbu tegak menyatakan frekuensi. Dalam hal ini, batas kelas interval merupakan tepi bawah dan tepi atas.
+            <br />
+            <br />
+            Tepi bawah = batas bawah – 0,5
+            <br />
+            Tepi atas = batas atas + 0,5
+            <br />
+            Titik tengah = batas bawah + batas atas /2
+          </p>
+
+          <p class="pt-3 mx-auto" style="text-align: justify">Jika setiap titik tengah sisi atas persegi panjang yang berdampingan dihubungkan dengan suatu garis, maka terbentuk grafik yang disebut Poligon frekuensi.</p>
+        </div>
+        <!-- akhir left side -->
+
+        <!-- sisi kanan -->
+        <div class="col-md-5 my-auto ms-auto" style="text-align: justify">
+          <img src="Tabel Histogram dan Poligon.jpeg" class="w-100 h-50" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Tahapan Tahapan -->
+
+    <!-- Content 3 -->
+    <div class="container row mx-auto pt-5">
+      <div class="col-md-6 text-center">
+        <h1>Grafik Histogram</h1>
+        <img src="Tabel Histogram.jpeg" alt="" class="w-100" />
+      </div>
+      <div class="col-md-6 text-center">
+        <h1>Grafik Poligon</h1>
+        <img src="Tabel Poligon.jpeg" alt="" class="w-100" />
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="bottom-0 w-100 h">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#131216"
+          fill-opacity="1"
+          d="M0,96L48,90.7C96,85,192,75,288,74.7C384,75,480,85,576,117.3C672,149,768,203,864,197.3C960,192,1056,128,1152,106.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+  </body>
+</html>
+
+<!-- JS CODE -->
+<!-- configure aos Animation -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Sticky Navbar -->
+<script>
+  var nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 100) {
+      nav.classList.add("bg-light", "shadow", "nav-color");
+    } else {
+      nav.classList.remove("bg-dark", "shadow");
+    }
+  });
+</script>
+
+<!-- loader  -->
+<script>
+  var loader;
+  function loadNow(opacity) {
+    if (opacity <= 0) {
+      displayContent();
+    } else {
+      loader.style.opacity = opacity;
+      window.setTimeout(function () {
+        loadNow(opacity - 0.05);
+      }, 100);
+    }
+  }
+
+  function displayContent() {
+    loader.style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    loader = document.getElementById("loader");
+    loadNow(1);
+  });
+</script>

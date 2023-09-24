@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Math</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- Load -->
+    <div id="loader"></div>
+
+    <!-- Parallax -->
+    <header class="parallax-head">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand fs-4" style="font-family: diary" href="#"> Math Statiska</a>
+          <!-- Toggle Button -->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- SideBar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- Sidebar Header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Math Statiska</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- Sidebar Body -->
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-1 fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Tabel_distribusi_frekuensi">Distribusi Frekuensi</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="Histogram & Poligon.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Histogram & Poligon </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html#step">Tahapan-Tahapan</a></li>
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html#histogram">Histogram & Poligon</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ogive </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="ogive.html">Ogive</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Naik</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Turun</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Container -->
+      <div class="container">
+        <div class="header-content text-center">
+          <a href="#">
+            <img src="logo smandong.png" width="300" class="d-block mx-auto" />
+          </a>
+          <h3 class="text-center text-light" style="font-family: roza">Matematika Wajib</h3>
+          <a href="#Tabel_distribusi_frekuensi">
+            <div class="scroll-down"></div>
+          </a>
+        </div>
+      </div>
+      <!-- end of container -->
+    </header>
+
+    <!-- content 1 -->
+    <div class="container text-light" id="Tabel_distribusi_frekuensi">
+      <div class="content row p-5 pt-md-5" data-aos="fade-down">
+        <!-- left side -->
+        <div class="col-md-6 left">
+          <h1 class="primary-color text-center">Tabel Distribusi Frekuensi</h1>
+          <p class="pt-3 mx-auto" style="text-align: justify">
+            Tabel distribusi frekuensi adalah sebuah tabel yang berisi nilai-nilai data, dengan nilai-nilai tersebut dikelompokkan ke dalam interval-interval kelas dan tiap interval kelasnya masing- masing mempunyai bilangan frekuensi
+            banyaknya angka yang ada di dalam kelas tersebut. Tabel distribusi frekuensi akan menunjukan nilai dan frekuensi dari nilai tersebut.
+          </p>
+
+          <p class="pt-3 mx-auto" style="text-align: justify">
+            Tabel distribusi frekuensi dapat dibuat melalui 4 tahap utama. Masing-masing tahap dilakukan untuk menentukan nilai data dalam bentuk kelompok kemudian menentukan frekuensi masing-masing kelasnya.
+          </p>
+        </div>
+        <!-- akhir left side -->
+
+        <!-- sisi kanan -->
+        <div class="col-md-5 mx-auto" style="text-align: justify">
+          <img src="Tabel Distribusi Frekuensi.jpeg" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- content 2 -->
+    <div class="row m-5 text-center">
+      <div class="col-md-3">
+        <div class="card">
+          <img data-aos="zoom-in" src="one-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <p data-aos="zoom-in">Menentukan jangkauan atau j, dimana j = data terbesar- data terkecil</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img data-aos="zoom-in" src="two-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <p data-aos="zoom-in">Menentukan banyak kelas atau k, dimana k = 1 + 3,3 log n</p>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img data-aos="zoom-in" src="three-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <p data-aos="zoom-in">Menentukan panjang interval kelas atau i, dimana i = j/k</p>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img data-aos="zoom-in" src="four-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <p data-aos="zoom-in">Menentukan masing-masing kelas, lalu dibuatkan ke dalam tabel</p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content 3 -->
+    <div class="container text-light" style="margin-top: 150px">
+      <div class="content row p-5 text-center" data-aos="fade-up">
+        <!-- left side -->
+        <div class="col-md-6 left">
+          <h2>1. Jangkauan</h2>
+          <p style="text-align: justify">
+            Jangkauan = Data Besar - Data Kecil
+            <br />
+            Jangkauan = 31 - 50
+            <br />
+            Jangkauan = 19
+          </p>
+          <hr />
+          <h2>2. Banyak Kelas</h2>
+          <p style="text-align: justify">
+            Banyak Kelas = 1 + 3,3 log(Banyak Data)
+            <br />
+            Banyak Kelas = 1 + 3,3log(100)
+            <br />
+            Banyak Kelas = 1 + 3,3 x 2
+            <br />
+            Banyak Kelas = 1 + 6,6
+            <br />
+            Banyak Kelas = 7,6
+            <br />
+            Banyak Kelas = 8
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <hr />
+        </div>
+        <!-- akhir left side -->
+
+        <!-- sisi kanan -->
+        <div class="col-md-6 kanan_tengah">
+          <h2>3. Panjang Interval</h2>
+          <p style="text-align: justify">
+            Panjang Interval = Batas atas - Batas bawah + 1
+            <br />
+            Panjang Interval = 35 - 31 + 1
+            <br />
+            Panjang Interval = 5
+          </p>
+          <hr />
+          <h2>4. Pembuatan Tabel</h2>
+          <img src="Tabel Distribusi frekuensi sdh disederhanaakan.jpeg" class="w-75" alt="" />
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bottom-0 w-100 h">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#131216"
+          fill-opacity="1"
+          d="M0,96L48,90.7C96,85,192,75,288,74.7C384,75,480,85,576,117.3C672,149,768,203,864,197.3C960,192,1056,128,1152,106.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+  </body>
+</html>
+
+<!-- JS CODE -->
+<!-- configure aos Animation -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Sticky Navbar -->
+<script>
+  var nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 100) {
+      nav.classList.add("bg-light", "shadow", "nav-color");
+    } else {
+      nav.classList.remove("bg-dark", "shadow");
+    }
+  });
+</script>
+
+<!-- loader  -->
+<script>
+  var loader;
+  function loadNow(opacity) {
+    if (opacity <= 0) {
+      displayContent();
+    } else {
+      loader.style.opacity = opacity;
+      window.setTimeout(function () {
+        loadNow(opacity - 0.05);
+      }, 100);
+    }
+  }
+
+  function displayContent() {
+    loader.style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    loader = document.getElementById("loader");
+    loadNow(1);
+  });
+</script>
