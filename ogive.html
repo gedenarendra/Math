@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
@@ -21,13 +27,13 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
           <!-- Logo -->
-          <a class="navbar-brand fs-4" style="font-family: diary" href="#"> Math Statiska</a>
+          <a class="navbar-brand fs-5" style="font-family: diary" href="#"> Math Statiska</a>
           <!-- Toggle Button -->
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- SideBar -->
-          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="sidebar offcanvas offcanvas-start" tabindex="1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <!-- Sidebar Header -->
             <div class="offcanvas-header text-white border-bottom">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Math Statiska</h5>
@@ -37,28 +43,56 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-1 fw-bold">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Distribusi Frekuensi </a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Distribusi Frekuensi </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html#Tabel_distribusi_frekuensi">Distribusi Frekuensi</a></li>
-                    <li><a class="dropdown-item" href="index.html#Tahapan_distribusi_frekuensi">Tahapan-Tahapan</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="Histogram & Poligon.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Histogram & Poligon </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="Histogram & Poligon.html#step">Tahapan-Tahapan</a></li>
-                    <li><a class="dropdown-item" href="Histogram & Poligon.html#histogram">Histogram & Poligon</a></li>
+                    <li><a class="dropdown-item" href="Distribusi Frekuensi.html">Distribusi Frekuensi</a></li>
+                    <li><a class="dropdown-item" href="Distribusi Frekuensi.html#Tabel_distribusi_frekuensi">Tabel Frekuensi</a></li>
+                    <li><a class="dropdown-item" href="Distribusi Frekuensi.html#Tahapan_distribusi_frekuensi">Tahapan-Tahapan</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ogive </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#ogive">Ogive</a></li>
-                    <li><a class="dropdown-item" href="#ogive-naik_turun">Ogive Naik</a></li>
-                    <li><a class="dropdown-item" href="#ogive-naik_turun">Ogive Turun</a></li>
+                    <li><a class="dropdown-item" href="ogive.html">Ogive</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Naik</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Turun</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="Histogram & Poligon.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Histogram & Poligon </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html">Histogram & Poligon</a></li>
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html#step">Tahapan-Tahapan</a></li>
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html#histogram">Histogram & Poligon</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lainnya </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-black-50 text-center" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pemusatan Data</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Pemusatan_data.html">Pemusatan Data</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#mean">Mean</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#median">Median</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#modus">Modus</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#kuartil">Kuartil</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#desil">Desil</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#persentil">Persentil</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-black-50 text-center" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Penyebaran Data</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Penyebaran_data.html">Penyebaran Data</a></li>
+                        <li><a class="dropdown-item" href="Penyebaran_data.html#simpangan_rata-rata">Simpangan Rata-rata</a></li>
+                        <li><a class="dropdown-item" href="Penyebaran_data.html#ragam">Ragam</a></li>
+                        <li><a class="dropdown-item" href="Penyebaran_data.html#simpangan_baku">simpangan Baku</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -73,7 +107,50 @@
           <a href="#">
             <img src="logo smandong.png" width="300" class="d-block mx-auto" />
           </a>
-          <h3 class="text-center text-light" style="font-family: bavista">Ogive</h3>
+          <svg id="texts" width="113" height="36" viewBox="0 0 113 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-outside-1_3_297" maskUnits="userSpaceOnUse" x="0" y="0" width="113" height="36" fill="black">
+              <rect fill="white" width="113" height="36" />
+              <path
+                d="M28.2313 14.6C28.2313 17.3 27.6439 19.6333 26.4691 21.6C25.2943 23.5667 23.6827 25.0833 21.6344 26.15C19.586 27.2167 17.2464 27.75 14.6157 27.75C11.9849 27.75 9.64534 27.2167 7.59697 26.15C5.54859 25.0833 3.93701 23.5667 2.7622 21.6C1.5874 19.6333 1 17.3 1 14.6C1 11.9 1.5874 9.56667 2.7622 7.6C3.93701 5.63333 5.54859 4.11667 7.59697 3.05C9.64534 1.98333 11.9849 1.45 14.6157 1.45C17.2464 1.45 19.586 1.98333 21.6344 3.05C23.6827 4.11667 25.2943 5.63333 26.4691 7.6C27.6439 9.56667 28.2313 11.9 28.2313 14.6ZM24.6165 14.6C24.6165 12.3833 24.1697 10.5125 23.2761 8.9875C22.3925 7.4625 21.1925 6.30833 19.6763 5.525C18.1702 4.74167 16.4833 4.35 14.6157 4.35C12.748 4.35 11.0561 4.74167 9.53991 5.525C8.03375 6.30833 6.83385 7.4625 5.9402 8.9875C5.05658 10.5125 4.61478 12.3833 4.61478 14.6C4.61478 16.8167 5.05658 18.6875 5.9402 20.2125C6.83385 21.7375 8.03375 22.8917 9.53991 23.675C11.0561 24.4583 12.748 24.85 14.6157 24.85C16.4833 24.85 18.1702 24.4583 19.6763 23.675C21.1925 22.8917 22.3925 21.7375 23.2761 20.2125C24.1697 18.6875 24.6165 16.8167 24.6165 14.6Z"
+              />
+              <path
+                d="M43.3682 35C41.6512 35 40.1751 34.8167 38.9401 34.45C37.705 34.0917 36.6758 33.6167 35.8525 33.025C35.0392 32.4417 34.3915 31.8167 33.9095 31.15L36.7411 29.5C37.0624 29.85 37.4691 30.25 37.9611 30.7C38.4531 31.1583 39.1259 31.5542 39.9793 31.8875C40.8429 32.2292 41.9725 32.4 43.3682 32.4C45.2358 32.4 46.7771 32.025 47.9921 31.275C49.2071 30.525 49.8145 29.35 49.8145 27.75V23.85H49.5133C49.2523 24.2 48.8807 24.6333 48.3988 25.15C47.9268 25.6583 47.244 26.1125 46.3504 26.5125C45.4668 26.9042 44.2719 27.1 42.7657 27.1C40.8981 27.1 39.2212 26.7333 37.7352 26C36.2591 25.2667 35.0894 24.2 34.2258 22.8C33.3723 21.4 32.9456 19.7 32.9456 17.7C32.9456 15.7333 33.3623 14.0208 34.1957 12.5625C35.0291 11.0958 36.1888 9.9625 37.6749 9.1625C39.161 8.35417 40.878 7.95 42.826 7.95C44.3321 7.95 45.527 8.15833 46.4106 8.575C47.3043 8.98333 47.9871 9.45 48.459 9.975C48.941 10.4917 49.3125 10.9167 49.5736 11.25H49.935V8.2H53.3691V27.95C53.3691 29.6 52.9172 30.9417 52.0135 31.975C51.1199 33.0167 49.915 33.7792 48.3988 34.2625C46.8926 34.7542 45.2157 35 43.3682 35ZM43.2477 24.45C44.6735 24.45 45.8785 24.1792 46.8625 23.6375C47.8465 23.0958 48.5946 22.3167 49.1067 21.3C49.6187 20.2833 49.8748 19.0667 49.8748 17.65C49.8748 16.2667 49.6238 15.0458 49.1217 13.9875C48.6197 12.9292 47.8766 12.1 46.8926 11.5C45.9086 10.9 44.6936 10.6 43.2477 10.6C41.7415 10.6 40.4864 10.9167 39.4823 11.55C38.4882 12.1833 37.7402 13.0333 37.2381 14.1C36.7461 15.1667 36.5001 16.35 36.5001 17.65C36.5001 18.9833 36.7511 20.1625 37.2532 21.1875C37.7653 22.2042 38.5184 23.0042 39.5124 23.5875C40.5165 24.1625 41.7616 24.45 43.2477 24.45Z"
+              />
+              <path
+                d="M59.8757 27.4V8.2H63.4302V27.4H59.8757ZM61.6831 5C60.9902 5 60.3928 4.80417 59.8907 4.4125C59.3987 4.02083 59.1527 3.55 59.1527 3C59.1527 2.45 59.3987 1.97917 59.8907 1.5875C60.3928 1.19583 60.9902 1 61.6831 1C62.3759 1 62.9683 1.19583 63.4603 1.5875C63.9624 1.97917 64.2134 2.45 64.2134 3C64.2134 3.55 63.9624 4.02083 63.4603 4.4125C62.9683 4.80417 62.3759 5 61.6831 5Z"
+              />
+              <path d="M88.8579 8.2L80.3029 27.4H76.6882L68.1332 8.2H71.9889L78.375 23.5H78.616L85.0021 8.2H88.8579Z" />
+              <path
+                d="M102.421 27.8C100.192 27.8 98.2689 27.3917 96.6523 26.575C95.0457 25.75 93.8056 24.6 92.9321 23.125C92.0685 21.6417 91.6368 19.9167 91.6368 17.95C91.6368 15.9833 92.0685 14.25 92.9321 12.75C93.8056 11.2417 95.0206 10.0667 96.577 9.225C98.1434 8.375 99.9708 7.95 102.059 7.95C103.264 7.95 104.454 8.11667 105.629 8.45C106.804 8.78333 107.873 9.325 108.837 10.075C109.801 10.8167 110.569 11.8 111.141 13.025C111.714 14.25 112 15.7583 112 17.55V18.8H94.1671V16.25H108.385C108.385 15.1667 108.124 14.2 107.602 13.35C107.09 12.5 106.357 11.8292 105.403 11.3375C104.459 10.8458 103.345 10.6 102.059 10.6C100.644 10.6 99.4186 10.8917 98.3843 11.475C97.3602 12.05 96.5719 12.8 96.0197 13.725C95.4674 14.65 95.1913 15.6417 95.1913 16.7V18.4C95.1913 19.85 95.4925 21.0792 96.095 22.0875C96.7075 23.0875 97.556 23.85 98.6404 24.375C99.7248 24.8917 100.985 25.15 102.421 25.15C103.355 25.15 104.198 25.0417 104.951 24.825C105.714 24.6 106.372 24.2667 106.924 23.825C107.477 23.375 107.903 22.8167 108.204 22.15L111.639 22.95C111.277 23.9167 110.67 24.7667 109.816 25.5C108.963 26.225 107.908 26.7917 106.653 27.2C105.398 27.6 103.987 27.8 102.421 27.8Z"
+              />
+            </mask>
+            <path
+              d="M28.2313 14.6C28.2313 17.3 27.6439 19.6333 26.4691 21.6C25.2943 23.5667 23.6827 25.0833 21.6344 26.15C19.586 27.2167 17.2464 27.75 14.6157 27.75C11.9849 27.75 9.64534 27.2167 7.59697 26.15C5.54859 25.0833 3.93701 23.5667 2.7622 21.6C1.5874 19.6333 1 17.3 1 14.6C1 11.9 1.5874 9.56667 2.7622 7.6C3.93701 5.63333 5.54859 4.11667 7.59697 3.05C9.64534 1.98333 11.9849 1.45 14.6157 1.45C17.2464 1.45 19.586 1.98333 21.6344 3.05C23.6827 4.11667 25.2943 5.63333 26.4691 7.6C27.6439 9.56667 28.2313 11.9 28.2313 14.6ZM24.6165 14.6C24.6165 12.3833 24.1697 10.5125 23.2761 8.9875C22.3925 7.4625 21.1925 6.30833 19.6763 5.525C18.1702 4.74167 16.4833 4.35 14.6157 4.35C12.748 4.35 11.0561 4.74167 9.53991 5.525C8.03375 6.30833 6.83385 7.4625 5.9402 8.9875C5.05658 10.5125 4.61478 12.3833 4.61478 14.6C4.61478 16.8167 5.05658 18.6875 5.9402 20.2125C6.83385 21.7375 8.03375 22.8917 9.53991 23.675C11.0561 24.4583 12.748 24.85 14.6157 24.85C16.4833 24.85 18.1702 24.4583 19.6763 23.675C21.1925 22.8917 22.3925 21.7375 23.2761 20.2125C24.1697 18.6875 24.6165 16.8167 24.6165 14.6Z"
+              stroke="#A9BD6A"
+              stroke-width="2"
+              mask="url(#path-1-outside-1_3_297)"
+            />
+            <path
+              d="M43.3682 35C41.6512 35 40.1751 34.8167 38.9401 34.45C37.705 34.0917 36.6758 33.6167 35.8525 33.025C35.0392 32.4417 34.3915 31.8167 33.9095 31.15L36.7411 29.5C37.0624 29.85 37.4691 30.25 37.9611 30.7C38.4531 31.1583 39.1259 31.5542 39.9793 31.8875C40.8429 32.2292 41.9725 32.4 43.3682 32.4C45.2358 32.4 46.7771 32.025 47.9921 31.275C49.2071 30.525 49.8145 29.35 49.8145 27.75V23.85H49.5133C49.2523 24.2 48.8807 24.6333 48.3988 25.15C47.9268 25.6583 47.244 26.1125 46.3504 26.5125C45.4668 26.9042 44.2719 27.1 42.7657 27.1C40.8981 27.1 39.2212 26.7333 37.7352 26C36.2591 25.2667 35.0894 24.2 34.2258 22.8C33.3723 21.4 32.9456 19.7 32.9456 17.7C32.9456 15.7333 33.3623 14.0208 34.1957 12.5625C35.0291 11.0958 36.1888 9.9625 37.6749 9.1625C39.161 8.35417 40.878 7.95 42.826 7.95C44.3321 7.95 45.527 8.15833 46.4106 8.575C47.3043 8.98333 47.9871 9.45 48.459 9.975C48.941 10.4917 49.3125 10.9167 49.5736 11.25H49.935V8.2H53.3691V27.95C53.3691 29.6 52.9172 30.9417 52.0135 31.975C51.1199 33.0167 49.915 33.7792 48.3988 34.2625C46.8926 34.7542 45.2157 35 43.3682 35ZM43.2477 24.45C44.6735 24.45 45.8785 24.1792 46.8625 23.6375C47.8465 23.0958 48.5946 22.3167 49.1067 21.3C49.6187 20.2833 49.8748 19.0667 49.8748 17.65C49.8748 16.2667 49.6238 15.0458 49.1217 13.9875C48.6197 12.9292 47.8766 12.1 46.8926 11.5C45.9086 10.9 44.6936 10.6 43.2477 10.6C41.7415 10.6 40.4864 10.9167 39.4823 11.55C38.4882 12.1833 37.7402 13.0333 37.2381 14.1C36.7461 15.1667 36.5001 16.35 36.5001 17.65C36.5001 18.9833 36.7511 20.1625 37.2532 21.1875C37.7653 22.2042 38.5184 23.0042 39.5124 23.5875C40.5165 24.1625 41.7616 24.45 43.2477 24.45Z"
+              stroke="#A9BD6A"
+              stroke-width="2"
+              mask="url(#path-1-outside-1_3_297)"
+            />
+            <path
+              d="M59.8757 27.4V8.2H63.4302V27.4H59.8757ZM61.6831 5C60.9902 5 60.3928 4.80417 59.8907 4.4125C59.3987 4.02083 59.1527 3.55 59.1527 3C59.1527 2.45 59.3987 1.97917 59.8907 1.5875C60.3928 1.19583 60.9902 1 61.6831 1C62.3759 1 62.9683 1.19583 63.4603 1.5875C63.9624 1.97917 64.2134 2.45 64.2134 3C64.2134 3.55 63.9624 4.02083 63.4603 4.4125C62.9683 4.80417 62.3759 5 61.6831 5Z"
+              stroke="#A9BD6A"
+              stroke-width="2"
+              mask="url(#path-1-outside-1_3_297)"
+            />
+            <path d="M88.8579 8.2L80.3029 27.4H76.6882L68.1332 8.2H71.9889L78.375 23.5H78.616L85.0021 8.2H88.8579Z" stroke="#A9BD6A" stroke-width="2" mask="url(#path-1-outside-1_3_297)" />
+            <path
+              d="M102.421 27.8C100.192 27.8 98.2689 27.3917 96.6523 26.575C95.0457 25.75 93.8056 24.6 92.9321 23.125C92.0685 21.6417 91.6368 19.9167 91.6368 17.95C91.6368 15.9833 92.0685 14.25 92.9321 12.75C93.8056 11.2417 95.0206 10.0667 96.577 9.225C98.1434 8.375 99.9708 7.95 102.059 7.95C103.264 7.95 104.454 8.11667 105.629 8.45C106.804 8.78333 107.873 9.325 108.837 10.075C109.801 10.8167 110.569 11.8 111.141 13.025C111.714 14.25 112 15.7583 112 17.55V18.8H94.1671V16.25H108.385C108.385 15.1667 108.124 14.2 107.602 13.35C107.09 12.5 106.357 11.8292 105.403 11.3375C104.459 10.8458 103.345 10.6 102.059 10.6C100.644 10.6 99.4186 10.8917 98.3843 11.475C97.3602 12.05 96.5719 12.8 96.0197 13.725C95.4674 14.65 95.1913 15.6417 95.1913 16.7V18.4C95.1913 19.85 95.4925 21.0792 96.095 22.0875C96.7075 23.0875 97.556 23.85 98.6404 24.375C99.7248 24.8917 100.985 25.15 102.421 25.15C103.355 25.15 104.198 25.0417 104.951 24.825C105.714 24.6 106.372 24.2667 106.924 23.825C107.477 23.375 107.903 22.8167 108.204 22.15L111.639 22.95C111.277 23.9167 110.67 24.7667 109.816 25.5C108.963 26.225 107.908 26.7917 106.653 27.2C105.398 27.6 103.987 27.8 102.421 27.8Z"
+              stroke="#A9BD6A"
+              stroke-width="2"
+              mask="url(#path-1-outside-1_3_297)"
+            />
+          </svg>
+
           <a href="#ogive">
             <div class="scroll-down"></div>
           </a>
@@ -84,7 +161,7 @@
 
     <!-- content 1 -->
     <div class="container text-light" id="ogive">
-      <div class="content row p-5 pt-md-5" data-aos="fade-down">
+      <div class="content row p-5 pt-md-5 rounded-3" data-aos="fade-down">
         <!-- left side -->
         <div class="col-md-6 left">
           <h1 class="primary-color text-center">Tabel Ogive</h1>
@@ -102,11 +179,11 @@
         <!-- akhir left side -->
 
         <!-- sisi kanan -->
-        <div class="col-md-5 mx-auto" style="text-align: justify">
-          <img src="Tabel Kumulatif Kurang dari.jpeg" class="w-100" alt="" />
+        <div class="col-md-5 m-auto" style="text-align: justify; justify-content: center">
+          <img src="Materi/Tabel Kumulatif Kurang Dari.PNG" class="w-100" alt="" />
           <br />
           <br />
-          <img src="Tabel Kumulatif Lebih dari.jpeg" class="w-100" alt="" />
+          <img src="Materi/Tabel Kumulatif Lebih Dari.PNG" class="w-100" alt="" />
         </div>
       </div>
     </div>
@@ -157,28 +234,25 @@
         <!-- left side -->
         <div class="col-md-6 left">
           <h2 class="pb-3">1. Ogive Positive</h2>
-          <img src="ogive Kurang Dari.jpeg" class="w-100" alt="" />
+          <img src="Materi/ogive kurang dari.png" class="w-100" alt="" />
         </div>
         <!-- akhir left side -->
 
         <!-- sisi kanan -->
         <div class="col-md-6 kanan_tengah">
           <h2 class="pb-3">2. Ogive Negative</h2>
-          <img src="ogive lebih dari.jpeg" class="w-100" alt="" />
+          <img src="Materi/ogive lebih dari.png" class="w-100" alt="" />
         </div>
       </div>
     </div>
 
     <!-- Footer -->
-    <div class="bottom-0 w-100 h">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#131216"
-          fill-opacity="1"
-          d="M0,96L48,90.7C96,85,192,75,288,74.7C384,75,480,85,576,117.3C672,149,768,203,864,197.3C960,192,1056,128,1152,106.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </div>
+    <section>
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </section>
   </body>
 </html>
 
@@ -223,5 +297,20 @@
   document.addEventListener("DOMContentLoaded", function () {
     loader = document.getElementById("loader");
     loadNow(1);
+  });
+</script>
+
+<!-- text Animation -->
+<script>
+  anime({
+    targets: "#texts path",
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: "easeInOutSine",
+    duration: 1500,
+    delay: function (el, i) {
+      return i * 90;
+    },
+    direction: "alternate",
+    loop: true,
   });
 </script>

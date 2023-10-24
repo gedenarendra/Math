@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Math</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="body4">
+    <!-- Load -->
+    <div id="loader"></div>
+
+    <!-- Parallax -->
+    <header class="parallax-head4">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand fs-5" style="font-family: diary" href="#"> Math Statiska</a>
+          <!-- Toggle Button -->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- SideBar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- Sidebar Header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Math Statiska</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- Sidebar Body -->
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-1 fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Distribusi Frekuensi </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Distribusi Frekuensi.html">Distribusi Frekuensi</a></li>
+                    <li><a class="dropdown-item" href="Distribusi Frekuensi.html#Tabel_distribusi_frekuensi">Tabel Frekuensi</a></li>
+                    <li><a class="dropdown-item" href="Distribusi Frekuensi.html#Tahapan_distribusi_frekuensi">Tahapan-Tahapan</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ogive </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="ogive.html">Ogive</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Naik</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Turun</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="Histogram & Poligon.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Histogram & Poligon </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html">Histogram & Poligon</a></li>
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html#step">Tahapan-Tahapan</a></li>
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html#histogram">Histogram & Poligon</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lainnya </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-black-50 text-center" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pemusatan Data</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Pemusatan_data.html">Pemusatan Data</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#mean">Mean</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#median">Median</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#modus">Modus</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#kuartil">Kuartil</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#desil">Desil</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#persentil">Persentil</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-black-50 text-center" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Penyebaran Data</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Penyebaran_data.html">Penyebaran Data</a></li>
+                        <li><a class="dropdown-item" href="Penyebaran_data.html#simpangan_rata-rata">Simpangan Rata-rata</a></li>
+                        <li><a class="dropdown-item" href="Penyebaran_data.html#ragam">Ragam</a></li>
+                        <li><a class="dropdown-item" href="Penyebaran_data.html#simpangan_baku">simpangan Baku</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Container -->
+      <div class="container">
+        <div class="header-content text-center">
+          <a href="#">
+            <img src="logo smandong.png" width="300" class="d-block mx-auto" />
+          </a>
+
+          <svg id="texts" width="296" height="31" viewBox="0 0 296 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M288.152 25.9089L288.154 25.9078C288.97 25.4451 289.567 24.8586 289.965 24.1524L289.967 24.1486L289.967 24.1486C290.382 23.4264 290.585 22.6763 290.585 21.8911V19.78C290.502 19.8092 290.414 19.8372 290.322 19.8642L290.316 19.866L290.316 19.866C289.838 19.9998 289.29 20.1175 288.675 20.2201L288.668 20.2211L288.668 20.2211C288.071 20.313 287.487 20.3958 286.917 20.4694L286.91 20.4703L286.91 20.4702C286.354 20.534 285.905 20.5884 285.562 20.6336L285.561 20.6336C284.751 20.7394 283.997 20.9106 283.301 21.1458L283.297 21.147L283.297 21.147C282.644 21.3619 282.136 21.6807 281.755 22.0933L288.152 25.9089ZM288.152 25.9089C287.369 26.3578 286.382 26.5961 285.168 26.5961M288.152 25.9089L285.168 26.5961M285.168 26.5961C283.955 26.5961 282.996 26.3301 282.259 25.834C281.581 25.3637 281.23 24.6784 281.23 23.6992C281.23 22.9678 281.423 22.4529 281.755 22.0936L285.168 26.5961ZM280.832 29.6991L280.835 29.7005C281.995 30.2364 283.278 30.5 284.675 30.5C285.946 30.5 287.053 30.3107 287.982 29.9114C288.875 29.5271 289.615 29.0512 290.182 28.4739C290.326 28.3272 290.461 28.1813 290.585 28.0363V29.5069V30.0069H291.085H294.318H294.818V29.5069V15.6451C294.818 13.9266 294.537 12.5002 293.934 11.4043C293.351 10.3451 292.604 9.52946 291.684 8.98338C290.814 8.46171 289.904 8.1149 288.956 7.94826C288.059 7.78024 287.252 7.69369 286.538 7.69369C285.433 7.69369 284.312 7.84613 283.178 8.14852C282.023 8.44959 280.958 8.9833 279.984 9.74447C278.992 10.5181 278.215 11.5874 277.641 12.9278L277.431 13.4167L277.932 13.5956L281 14.6914L281.43 14.8448L281.622 14.4311C281.935 13.7559 282.491 13.0937 283.323 12.4524C284.083 11.8662 285.172 11.5428 286.647 11.5428C288.059 11.5428 289.015 11.8974 289.618 12.5151L289.618 12.5151L289.62 12.5173C290.243 13.148 290.585 14.0574 290.585 15.3163V15.4259C290.585 15.8111 290.46 15.9843 290.279 16.0857L290.279 16.0856L290.275 16.0883C290.001 16.2454 289.502 16.3872 288.717 16.4767C287.917 16.5594 286.876 16.6832 285.597 16.8477L285.596 16.8478C284.604 16.9776 283.617 17.1537 282.635 17.376C281.635 17.5952 280.714 17.93 279.876 18.383C279.007 18.8526 278.308 19.5056 277.787 20.337C277.246 21.1896 276.997 22.2682 276.997 23.5348C276.997 24.9845 277.337 26.2533 278.039 27.3169L278.04 27.3187C278.732 28.3566 279.667 29.1506 280.832 29.6991Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M274.121 8.46763V7.96763H273.621H269.628V3.42698V2.92698H269.128H265.896H265.396V3.42698V7.96763H262.718H262.218V8.46763V11.2071V11.7071H262.718H265.396V24.3567C265.396 25.6579 265.698 26.7789 266.336 27.6855L266.338 27.6885C266.963 28.5608 267.752 29.217 268.703 29.6474L268.705 29.6482C269.642 30.0681 270.607 30.2808 271.594 30.2808C272.215 30.2808 272.752 30.2343 273.195 30.1322C273.595 30.0482 273.927 29.9603 274.18 29.8655L274.589 29.7123L274.492 29.2869L273.835 26.383L273.727 25.9076L273.249 26.0032L272.711 26.1107C272.52 26.1406 272.259 26.1578 271.923 26.1578C271.502 26.1578 271.107 26.0937 270.734 25.9675C270.441 25.8575 270.179 25.6421 269.955 25.2788C269.758 24.9349 269.628 24.357 269.628 23.48V11.7071H273.621H274.121V11.2071V8.46763Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M252.405 25.9089L252.407 25.9078C253.223 25.4451 253.82 24.8586 254.218 24.1524L254.22 24.1486L254.22 24.1486C254.635 23.4264 254.838 22.6763 254.838 21.8911V19.78C254.755 19.8092 254.667 19.8372 254.576 19.8642L254.569 19.866L254.569 19.866C254.091 19.9998 253.543 20.1175 252.928 20.2201L252.922 20.2211L252.922 20.2211C252.324 20.313 251.74 20.3958 251.17 20.4694L251.163 20.4703L251.163 20.4702C250.607 20.534 250.158 20.5884 249.815 20.6336L249.815 20.6336C249.004 20.7394 248.251 20.9106 247.554 21.1458L247.55 21.147L247.55 21.147C246.897 21.3619 246.39 21.6807 246.008 22.0933L252.405 25.9089ZM252.405 25.9089C251.622 26.3578 250.635 26.5961 249.421 26.5961M252.405 25.9089L249.421 26.5961M249.421 26.5961C248.208 26.5961 247.249 26.3301 246.512 25.834C245.834 25.3637 245.483 24.6784 245.483 23.6992C245.483 22.9678 245.676 22.4529 246.008 22.0936L249.421 26.5961ZM245.085 29.6991L245.088 29.7005C246.248 30.2364 247.531 30.5 248.928 30.5C250.199 30.5 251.307 30.3107 252.235 29.9114C253.129 29.5271 253.868 29.0512 254.435 28.4739C254.579 28.3272 254.714 28.1813 254.838 28.0363V29.5069V30.0069H255.338H258.571H259.071V29.5069V15.6451C259.071 13.9266 258.79 12.5002 258.187 11.4043C257.604 10.3451 256.857 9.52946 255.937 8.98338C255.067 8.46171 254.157 8.1149 253.209 7.94826C252.312 7.78024 251.505 7.69369 250.791 7.69369C249.686 7.69369 248.565 7.84613 247.431 8.14851C246.276 8.44958 245.211 8.9833 244.237 9.74447C243.246 10.5181 242.468 11.5874 241.894 12.9278L241.684 13.4167L242.185 13.5956L245.253 14.6914L245.683 14.8448L245.875 14.4311C246.189 13.7559 246.744 13.0937 247.576 12.4524C248.336 11.8662 249.425 11.5428 250.901 11.5428C252.312 11.5428 253.269 11.8974 253.871 12.5151L253.871 12.5151L253.873 12.5173C254.496 13.148 254.838 14.0574 254.838 15.3163V15.4259C254.838 15.8111 254.713 15.9843 254.532 16.0857L254.532 16.0856L254.528 16.0883C254.254 16.2454 253.755 16.3872 252.97 16.4767C252.17 16.5594 251.13 16.6832 249.851 16.8477L249.849 16.8478C248.858 16.9776 247.87 17.1537 246.888 17.376C245.888 17.5952 244.968 17.93 244.129 18.383C243.26 18.8526 242.561 19.5056 242.04 20.337C241.5 21.1896 241.251 22.2682 241.251 23.5348C241.251 24.9845 241.59 26.2533 242.292 27.3169L242.293 27.3187C242.985 28.3566 243.92 29.1506 245.085 29.6991Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M214.952 29.5069V30.0069H215.452H224.108C227.023 30.0069 229.532 29.4323 231.614 28.2576L231.615 28.2567C233.695 27.0739 235.279 25.3826 236.364 23.1953L236.364 23.1945C237.446 21.0016 237.977 18.4066 237.977 15.4259C237.977 12.4639 237.451 9.89138 236.377 7.72535C235.304 5.55002 233.753 3.87203 231.728 2.70641C229.701 1.53065 227.282 0.954544 224.492 0.954544H215.452H214.952V1.45454V29.5069ZM232.624 9.7823L232.625 9.78326C233.328 11.3384 233.69 13.2143 233.69 15.4259C233.69 17.6555 233.324 19.5496 232.611 21.1232C231.904 22.6846 230.836 23.8787 229.403 24.7199C227.975 25.5578 226.147 25.9934 223.889 25.9934H219.349V4.96798H224.273C226.398 4.96798 228.134 5.39739 229.507 6.22491L229.509 6.22608C230.887 7.04734 231.924 8.22684 232.624 9.7823Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M184.834 30.0069H185.334V29.5069V16.8505C185.334 15.6894 185.555 14.7348 185.972 13.9659C186.396 13.186 186.964 12.6046 187.679 12.2062C188.41 11.8042 189.247 11.5975 190.204 11.5975C191.589 11.5975 192.624 12.0236 193.37 12.8335L193.372 12.8353C194.12 13.6392 194.525 14.7904 194.525 16.3574V29.5069V30.0069H195.025H198.258H198.758V29.5069V16.1382C198.758 14.2973 198.453 12.7343 197.814 11.4745C197.179 10.2143 196.279 9.2589 195.113 8.63087C193.96 8.00039 192.629 7.69369 191.135 7.69369C189.481 7.69369 188.081 8.03582 186.973 8.76068C186.278 9.20919 185.695 9.75316 185.225 10.3908V8.46764V7.96764H184.725H181.602H181.102V8.46764V29.5069V30.0069H181.602H184.834Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M169.536 25.9089L169.538 25.9078C170.354 25.4451 170.951 24.8586 171.348 24.1524L171.351 24.1486L171.351 24.1486C171.766 23.4264 171.969 22.6763 171.969 21.8911V19.78C171.885 19.8092 171.798 19.8372 171.706 19.8642L171.7 19.866L171.7 19.866C171.222 19.9998 170.674 20.1175 170.058 20.2201L170.052 20.2211L170.052 20.2211C169.455 20.313 168.871 20.3958 168.3 20.4694L168.294 20.4703L168.294 20.4702C167.738 20.534 167.289 20.5884 166.946 20.6336L166.945 20.6336C166.134 20.7394 165.381 20.9106 164.684 21.1458L164.681 21.147L164.681 21.147C164.028 21.3619 163.52 21.6807 163.139 22.0933L169.536 25.9089ZM169.536 25.9089C168.752 26.3578 167.766 26.5961 166.552 26.5961M169.536 25.9089L166.552 26.5961M166.552 26.5961C165.338 26.5961 164.38 26.3301 163.642 25.834C162.964 25.3637 162.614 24.6784 162.614 23.6992C162.614 22.9678 162.807 22.4529 163.138 22.0936L166.552 26.5961ZM162.216 29.6991L162.219 29.7005C163.379 30.2364 164.661 30.5 166.059 30.5C167.329 30.5 168.437 30.3107 169.365 29.9114C170.259 29.5271 170.998 29.0512 171.566 28.4739C171.71 28.3272 171.844 28.1813 171.969 28.0362V29.5069V30.0069H172.469H175.702H176.202V29.5069V15.6451C176.202 13.9266 175.921 12.5002 175.318 11.4043C174.735 10.3451 173.987 9.52946 173.068 8.98338C172.198 8.46171 171.288 8.1149 170.339 7.94826C169.442 7.78024 168.635 7.69369 167.921 7.69369C166.816 7.69369 165.696 7.84613 164.561 8.14851C163.407 8.44958 162.341 8.9833 161.368 9.74447C160.376 10.5181 159.599 11.5874 159.024 12.9278L158.815 13.4167L159.316 13.5956L162.384 14.6914L162.813 14.8448L163.006 14.4311C163.319 13.7559 163.874 13.0937 164.706 12.4524C165.467 11.8662 166.556 11.5428 168.031 11.5428C169.442 11.5428 170.399 11.8974 171.002 12.5151L171.002 12.5151L171.004 12.5173C171.627 13.148 171.969 14.0574 171.969 15.3163V15.4259C171.969 15.811 171.843 15.9843 171.663 16.0857L171.663 16.0856L171.658 16.0883C171.385 16.2454 170.885 16.3872 170.1 16.4767C169.3 16.5594 168.26 16.6832 166.981 16.8477L166.98 16.8478C165.988 16.9776 165.001 17.1537 164.019 17.376C163.019 17.5952 162.098 17.93 161.26 18.383C160.39 18.8526 159.692 19.5056 159.17 20.337C158.63 21.1896 158.381 22.2682 158.381 23.5348C158.381 24.9845 158.72 26.2533 159.423 27.3169L159.424 27.3187C160.116 28.3566 161.05 29.1506 162.216 29.6991Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M155.505 8.46763V7.96763H155.005H151.012V3.42698V2.92698H150.512H147.279H146.779V3.42698V7.96763H144.102H143.602V8.46763V11.2071V11.7071H144.102H146.779V24.3567C146.779 25.6579 147.081 26.7789 147.72 27.6855L147.722 27.6885C148.347 28.5608 149.136 29.217 150.087 29.6474L150.088 29.6482C151.026 30.0681 151.99 30.2808 152.978 30.2808C153.599 30.2808 154.136 30.2343 154.578 30.1322C154.979 30.0482 155.311 29.9603 155.564 29.8655L155.972 29.7123L155.876 29.2869L155.218 26.383L155.111 25.9076L154.633 26.0032L154.095 26.1107C153.903 26.1406 153.643 26.1578 153.306 26.1578C152.886 26.1578 152.491 26.0937 152.118 25.9675C151.824 25.8575 151.563 25.642 151.339 25.2788C151.141 24.9349 151.012 24.357 151.012 23.48V11.7071H155.005H155.505V11.2071V8.46763Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M133.789 25.9089L133.791 25.9078C134.607 25.4451 135.204 24.8586 135.602 24.1524L135.604 24.1486L135.604 24.1486C136.019 23.4264 136.222 22.6763 136.222 21.8911V19.78C136.139 19.8092 136.051 19.8372 135.959 19.8642L135.953 19.866L135.953 19.866C135.475 19.9998 134.927 20.1175 134.311 20.2201L134.305 20.2211L134.305 20.2211C133.708 20.313 133.124 20.3958 132.554 20.4694L132.547 20.4703L132.547 20.4702C131.991 20.534 131.542 20.5884 131.199 20.6336L131.198 20.6336C130.387 20.7394 129.634 20.9106 128.938 21.1458L128.934 21.147L128.934 21.147C128.281 21.3619 127.773 21.6807 127.392 22.0933L133.789 25.9089ZM133.789 25.9089C133.006 26.3578 132.019 26.5961 130.805 26.5961M133.789 25.9089L130.805 26.5961M130.805 26.5961C129.591 26.5961 128.633 26.3301 127.895 25.834C127.218 25.3637 126.867 24.6784 126.867 23.6992C126.867 22.9678 127.06 22.4529 127.392 22.0936L130.805 26.5961ZM126.469 29.6991L126.472 29.7005C127.632 30.2364 128.914 30.5 130.312 30.5C131.582 30.5 132.69 30.3107 133.619 29.9114C134.512 29.5271 135.251 29.0512 135.819 28.4739C135.963 28.3272 136.097 28.1813 136.222 28.0362V29.5069V30.0069H136.722H139.955H140.455V29.5069V15.6451C140.455 13.9266 140.174 12.5002 139.571 11.4043C138.988 10.3451 138.241 9.52946 137.321 8.98338C136.451 8.46171 135.541 8.1149 134.592 7.94826C133.696 7.78024 132.888 7.69369 132.175 7.69369C131.069 7.69369 129.949 7.84613 128.815 8.14851C127.66 8.44958 126.594 8.9833 125.621 9.74447C124.629 10.5181 123.852 11.5874 123.277 12.9278L123.068 13.4167L123.569 13.5956L126.637 14.6914L127.067 14.8448L127.259 14.4311C127.572 13.7559 128.128 13.0937 128.96 12.4524C129.72 11.8662 130.809 11.5428 132.284 11.5428C133.696 11.5428 134.652 11.8974 135.255 12.5151L135.255 12.5151L135.257 12.5173C135.88 13.148 136.222 14.0574 136.222 15.3163V15.4259C136.222 15.811 136.097 15.9843 135.916 16.0857L135.916 16.0856L135.911 16.0883C135.638 16.2454 135.139 16.3872 134.353 16.4767C133.553 16.5594 132.513 16.6832 131.234 16.8477L131.233 16.8478C130.241 16.9776 129.254 17.1537 128.272 17.376C127.272 17.5952 126.351 17.93 125.513 18.383C124.644 18.8526 123.945 19.5056 123.424 20.337C122.883 21.1896 122.634 22.2682 122.634 23.5348C122.634 24.9845 122.974 26.2533 123.676 27.3169L123.677 27.3187C124.369 28.3566 125.304 29.1506 126.469 29.6991Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M119.007 13.6607L119.512 13.5178L119.345 13.0206C118.813 11.4335 117.907 10.1434 116.627 9.16655C115.325 8.16469 113.569 7.69369 111.42 7.69369C109.881 7.69369 108.486 7.96456 107.244 8.51768L107.243 8.51828C106.014 9.06964 105.025 9.83749 104.292 10.8275L104.292 10.8275L104.29 10.8301C103.558 11.8333 103.194 12.9879 103.194 14.2753C103.194 15.8393 103.68 17.1746 104.669 18.2446L104.669 18.2446L104.673 18.2482C105.67 19.3054 107.19 20.0463 109.167 20.5148L109.169 20.5151L112.675 21.3369L112.676 21.3371C113.689 21.5728 114.375 21.9172 114.795 22.33L114.795 22.33L114.798 22.3332C115.209 22.7291 115.412 23.2097 115.412 23.8088C115.412 24.5162 115.074 25.1545 114.277 25.7323C113.503 26.2904 112.421 26.5961 110.981 26.5961C109.726 26.5961 108.762 26.328 108.047 25.8358C107.35 25.35 106.857 24.6122 106.589 23.5742L106.465 23.0938L105.984 23.2141L102.915 23.9812L102.449 24.0978L102.547 24.5686C102.946 26.4753 103.906 27.9544 105.432 28.9649C106.939 29.9636 108.819 30.4452 111.036 30.4452C112.726 30.4452 114.231 30.1619 115.54 29.5803C116.841 29.0022 117.874 28.2019 118.618 27.1708C119.376 26.1335 119.755 24.9525 119.755 23.6444C119.755 22.0604 119.253 20.7277 118.227 19.691C117.216 18.66 115.716 17.9293 113.785 17.4605C113.784 17.4605 113.784 17.4604 113.784 17.4604L110.664 16.6941C110.664 16.694 110.664 16.694 110.663 16.6939C109.449 16.3902 108.617 16.0238 108.115 15.6239C107.66 15.261 107.427 14.7755 107.427 14.111C107.427 13.3966 107.748 12.7965 108.484 12.2902L108.485 12.2895C109.242 11.7661 110.21 11.488 111.42 11.488C112.311 11.488 112.999 11.6315 113.511 11.8872C114.055 12.1592 114.465 12.4956 114.758 12.8893L114.758 12.8894L114.765 12.8981C115.094 13.3196 115.336 13.7463 115.499 14.1779L115.661 14.6075L116.103 14.4825L119.007 13.6607Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M94.8149 7.96764H94.3149V8.46764V20.9049C94.3149 22.1479 94.0433 23.1248 93.538 23.8708L93.5359 23.8738C93.0142 24.6564 92.3763 25.2238 91.6228 25.5923L91.6209 25.5932C90.8482 25.9753 90.1064 26.1578 89.3907 26.1578C88.1757 26.1578 87.2055 25.7507 86.4392 24.9446C85.6872 24.144 85.2883 23.0534 85.2883 21.6172V8.46764V7.96764H84.7883H81.5557H81.0557V8.46764V21.8363C81.0557 23.6768 81.3557 25.2429 81.9845 26.5102L81.9852 26.5116C82.6087 27.7587 83.4774 28.7133 84.595 29.352L84.598 29.3537C85.7043 29.976 86.9594 30.2808 88.3497 30.2808C90.0168 30.2808 91.4398 29.892 92.5841 29.0789L92.5865 29.0772C93.2706 28.5851 93.848 28.0242 94.3149 27.3944V29.5069V30.0069H94.8149H98.0474H98.5474V29.5069V8.46764V7.96764H98.0474H94.8149Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M47.5313 29.5069V30.0069H48.0313H51.2639H51.7639V29.5069V16.3574C51.7639 15.3985 51.9668 14.5764 52.3574 13.8762C52.7664 13.1503 53.2932 12.594 53.937 12.1944C54.5902 11.7945 55.285 11.5975 56.0306 11.5975C57.1454 11.5975 58.0154 11.9306 58.6854 12.569L58.6876 12.5711C59.3506 13.1951 59.6946 14.0202 59.6946 15.0972V29.5069V30.0069H60.1946H63.482H63.982V29.5069V15.8095C63.982 14.5563 64.3527 13.5592 65.0695 12.7779L65.0712 12.776C65.7684 12.0083 66.7667 11.5975 68.1391 11.5975C69.1856 11.5975 70.0749 11.898 70.8301 12.4908C71.5124 13.0263 71.9127 13.9568 71.9127 15.4259V29.5069V30.0069H72.4127H75.6453H76.1453V29.5069V15.4259C76.1453 12.8815 75.5311 10.9037 74.2011 9.60371C72.8998 8.32265 71.2297 7.69369 69.2349 7.69369C67.6561 7.69369 66.2713 8.03382 65.1021 8.73697C64.1583 9.29711 63.4014 10.0216 62.8381 10.9077C62.3172 10.0078 61.6442 9.27652 60.8167 8.72433C59.7935 8.02615 58.5345 7.69369 57.0716 7.69369C55.6238 7.69369 54.3528 8.02744 53.2818 8.7177C52.6289 9.13284 52.0862 9.65126 51.6543 10.2689V8.46764V7.96764H51.1543H48.0313H47.5313V8.46764V29.5069Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M28.8931 29.0281L28.8963 29.03C30.4578 29.9804 32.2999 30.4452 34.4023 30.4452C35.8782 30.4452 37.2233 30.2181 38.4306 29.7545L38.4338 29.7532C39.6343 29.2826 40.6548 28.6245 41.4854 27.7743L41.4874 27.7722C42.3175 26.9128 42.9106 25.9133 43.2627 24.7788L43.415 24.2881L42.9203 24.1492L39.7973 23.2726L39.3552 23.1485L39.194 23.5784C38.9432 24.2473 38.5933 24.7945 38.1493 25.231C37.7019 25.6616 37.1671 25.9897 36.5379 26.2135C35.9143 26.4294 35.2044 26.5413 34.4023 26.5413C33.1714 26.5413 32.1142 26.2753 31.2147 25.7593C30.3192 25.2366 29.6129 24.4765 29.0963 23.4612C28.6987 22.6584 28.4503 21.7022 28.3629 20.5831H43.1139H43.6139V20.0831V18.7133C43.6139 16.7092 43.3487 14.9909 42.7993 13.5741C42.2571 12.1758 41.5204 11.0302 40.5784 10.1565C39.6537 9.28986 38.621 8.65798 37.4816 8.26847L37.3217 8.73629L37.4816 8.26847C36.3628 7.88595 35.2261 7.69369 34.0736 7.69369C32.0888 7.69369 30.3295 8.18161 28.8144 9.17212C27.3161 10.1486 26.1528 11.5091 25.3223 13.2369L25.3218 13.2379C24.499 14.9602 24.095 16.9355 24.095 19.1516C24.095 21.3676 24.4989 23.3347 25.3227 25.0399L25.3242 25.0429C26.158 26.7393 27.3483 28.0722 28.8931 29.0281ZM39.3111 16.7888H28.3958C28.4963 16.0737 28.7074 15.3928 29.029 14.7439C29.493 13.8073 30.1522 13.0518 31.0116 12.4705L31.0125 12.4699C31.8595 11.8943 32.8726 11.5975 34.0736 11.5975C35.1631 11.5975 36.0815 11.8477 36.8486 12.3292L36.8506 12.3304C37.638 12.8194 38.2418 13.4842 38.667 14.3346L38.667 14.3346L38.6688 14.3381C39.0373 15.0608 39.2539 15.8753 39.3111 16.7888Z"
+              stroke="#1FA3AB"
+            />
+            <path
+              d="M1.26136 29.5069V30.0069H1.76136H5.15832H5.65832V29.5069V19.7612H11.2948C13.5341 19.7612 15.4166 19.3541 16.9113 18.5042L16.9135 18.503C18.3898 17.6538 19.494 16.5055 20.2076 15.0594C20.9208 13.6324 21.2734 12.0531 21.2734 10.3305C21.2734 8.60749 20.9206 7.03174 20.2064 5.6129C19.4827 4.17534 18.3683 3.0409 16.8822 2.21062C15.3873 1.36104 13.4959 0.954544 11.24 0.954544H1.76136H1.26136V1.45454V29.5069ZM11.1852 15.7478H5.65832V4.96798H11.1304C12.606 4.96798 13.7365 5.21638 14.5589 5.67232L14.5589 5.67233L14.5622 5.67415C15.3979 6.12922 15.9852 6.74646 16.3476 7.52746L16.3476 7.52747L16.3494 7.53129C16.7333 8.34098 16.9312 9.2706 16.9312 10.3305C16.9312 11.3902 16.7334 12.3252 16.3485 13.1452L16.3476 13.1472C15.9838 13.9314 15.3976 14.5594 14.5674 15.0326C13.7554 15.4955 12.6405 15.7478 11.1852 15.7478Z"
+              stroke="#1FA3AB"
+            />
+          </svg>
+
+          <a href="#mean">
+            <div class="scroll-down"></div>
+          </a>
+        </div>
+      </div>
+      <!-- end of container -->
+    </header>
+
+    <!-- content 1 -->
+    <div class="container" id="mean">
+      <div class="row content text-center text-dark rounded-3 py-3" style="background-color: #fff">
+        <h1 class="text-center text-dark">Tahapan Pembuatan Mean</h1>
+        <div class="col-md-4">
+          <img data-aos="zoom-in" src="one-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Titik Tengah Setiap Kelas</h6>
+          <p data-aos="zoom-in" class="text-center">
+            Untuk kelas pertama (30,31,32), <br />
+            maka titik tengah = 31
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img data-aos="zoom-in" src="two-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Jumlah Keseluruhan Data</h6>
+          <p data-aos="zoom-in" class="text-center">
+            Mengkalikan setiap titik tengah kelas dengan frekuensinya
+            <br />
+            Untuk kelas pertama, 31 x 3 = 93
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img data-aos="zoom-in" src="three-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Membagi Jumlah Keseluruhan Data</h6>
+          <img src="Materi/rumus mean.jpg" alt="..." width="auto" height="100px" />
+        </div>
+      </div>
+    </div>
+
+    <!-- content 2 -->
+    <div class="container text-light" style="margin-top: 150px">
+      <div class="content row p-3" data-aos="fade-up">
+        <!-- left side -->
+        <div class="col-md-6 left">
+          <h1 class="primary-color text-center">Mean</h1>
+          <p class="pt-3 mx-auto" style="text-align: justify">
+            Rata-rata bisa kita sebut juga dengan mean. Rata-rata (mean) adalah suatu bilangan yang mewakili sekumpulan data. Rata-rata (mean) dilambangkan dengan simbol x̄ (dibaca x bar).
+          </p>
+          <img class="d-block m-auto w-75" src="Materi/Hitungan Mean.jpeg" alt="..." />
+        </div>
+        <!-- akhir left side -->
+
+        <!-- sisi kanan -->
+        <div class="p-5 d-block col-md-5 m-auto" style="text-align: justify">
+          <img src="Materi/Tabel Mean.JPG" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Content 3 -->
+    <div class="container text-light text-center my-4" id="median">
+      <h1 class="py-2">Tabel Median</h1>
+      <img class="d-block m-auto w-auto py-3" src="Materi/Tabel Median.JPG" alt="..." />
+    </div>
+
+    <!-- Content 4 -->
+    <div class="row justify-content-center m-4 text-center">
+      <h3 class="p-3">Tahapan Perhitungan Median</h3>
+      <!-- 1 -->
+      <div class="col-md-3 m-2">
+        <div class="card bg">
+          <img data-aos="zoom-in" src="one-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menentukan frekuensi (fk)</h4>
+            <p data-aos="zoom-in">Untuk kelas pertama, maka fk = 3 Untuk kelas kedua, maka fk = 16 + 3 = 19.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="two-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menetukan kelas median</h4>
+            <p data-aos="zoom-in">Dengan rumus (½ n), dimana n adalah frekuensi kumulatif kelas terakhir ½ n = ½ . 100 = 50 Sehingga kelas median ada di data pada urutan ke-50, yakni data kelas ketiga.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="three-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Mencari tepi bawah kelas median</h4>
+            <p data-aos="zoom-in">
+              Sudah diketahui bahwa kelas median ada pada kelas ketiga dengan interval 36 - 38 dengan batas bawah (Bb) 36 dan batas atas (Ba) 38. <br />
+              Tepi Bawah (Tb) = 36 - 0,5 = 35,5
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="four-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Mencari fks (frekuensi kumulatif sebelum)</h4>
+            <p data-aos="zoom-in">Fks kelas median dapat ditentukan dengan menjumlahkan frekuensi kelas-kelas sebelum kelas median, yakni 19</p>
+          </div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="five-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menentukan fi</h4>
+            <p data-aos="zoom-in">Fi yang digunakan adalah frekuensi dari kelas median yakni frekuensi dari kelas ketiga, yakni 32</p>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="six-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menentukan panjang kelas (c)</h4>
+            <p data-aos="zoom-in">Panjang kelas dapat ditentukan dengan menjumlahkan selisih batas bawah kelas kedua dengan kelas pertama. menjadi C = 33 - 30 = 3 Jadi, panjang kelas data tersebut adalah 3.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="seven-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menentukan median</h4>
+            <p data-aos="zoom-in"></p>
+            <img src="Materi/Perhitungan Median.PNG" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Content 5 -->
+    <div class="container text-light text-center my-4" id="modus">
+      <h1 class="py-2">Tabel Modus</h1>
+      <img class="d-block m-auto py-3" src="Materi/Tabel Modus.JPG" width="200px" alt="..." />
+    </div>
+
+    <!-- Content 6-->
+    <div class="row justify-content-center m-4 text-center">
+      <h3 class="p-3">Tahapan Perhitungan Modus</h3>
+      <!-- 1 -->
+      <div class="col-md-3 m-2">
+        <div class="card bg">
+          <img data-aos="zoom-in" src="one-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menentukan Kelas Modus</h4>
+            <p data-aos="zoom-in">Kelas modus merupakan kelas dengan frekuensi terbanyak. Kelas modus pada data kali ini berada pada kelas ketiga dimana frekuensinya adalah 32</p>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="two-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menetukan Tepi kelas bawah kelas (Tb)</h4>
+            <p data-aos="zoom-in">
+              Tepi Bawah yang digunakan adalah tepi bawah kelas kedua yang memiliki interval 36 - 38 dengan batas bawah 36 maka, <br />
+              Tb = Frekuensi terbanyak - 0,5 <br />
+              Tb = 36 - 0,5 <br />
+              Tb = 35,5
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="three-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menentukan S1</h4>
+            <p data-aos="zoom-in">
+              S1 = Frekuensi Kelas modus - Frekuensi sebelum Kelas modus <br />
+              S1 = 32 - 16 <br />
+              S1 = 16 <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="four-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menentukan S2</h4>
+            <p data-aos="zoom-in">
+              S1 = Frekuensi Kelas modus - Frekuensi setelah Kelas modus <br />
+              S1 = 32 - 19 <br />
+              S1 = 13 <br />
+              <br />
+              <br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="five-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menentukan panjang kelas (c)</h4>
+            <p data-aos="zoom-in">
+              Panjang kelas dapat ditentukan dengan menjumlahkan selisih batas bawah kelas kedua dengan kelas pertama. menjadi C = 33 - 30 = 3 Jadi, panjang kelas data tersebut adalah 3.
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="col-md-3 m-2">
+        <div class="card">
+          <img data-aos="zoom-in" src="six-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <h4>Menentukan modus</h4>
+            <p data-aos="zoom-in">
+              Memasukan Nilai-nilai yang sudah didapatkan pada langkah sebelumnya
+              <br />
+            </p>
+            <img src="Materi/" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- content 7 -->
+    <div class="container" id="kuartil">
+      <div class="row text-center text-dark rounded-3 py-3" style="background-color: whitesmoke">
+        <h1 class="text-center text-dark">Tahapan Pembuatan Kuartil</h1>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="one-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Kelas Kuartil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">Rumus kelas kuartil sebagai berikut:</p>
+          <img src="Materi/Rumus kelas Kuartil.PNG" class="w-75" alt="" />
+        </div>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="two-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Tepi bawah kuartil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">Menentukan tepi bawah kelas kuartil dengan mengurangi batas bawah kelas kuartil dengan 0,5</p>
+        </div>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="three-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Frekuensi Kumulatif sebelum Kelas Kuartil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">fk meruapakan frekuensi sebelum kelas kuartil, berarti 19 untuk kelas Q1 dan 70 untuk kelas Q3</p>
+        </div>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="four-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menghitung kuartil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">Menentukan frekuensi kumulatif kelas kuartil dan panjang kelas (c), kemudian memasukkan semua unsurnya ke dalam formula berikut:</p>
+          <img src="Materi/Rumus Kuartil.PNG" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- content 8 -->
+    <div class="container text-light" style="margin-top: 150px">
+      <div class="content row p-3" data-aos="fade-up">
+        <h1 class="primary-color text-center">Kuartil</h1>
+        <p class="pt-3 mx-auto text-center">Memasukan Nilai-nilai yang sudah didapatkan pada langkah sebelumnya</p>
+        <!-- left side -->
+        <div class="col-md-6 left">
+          <img class="d-block m-auto w-75" src="Materi/Perhitungsn Kuartil.PNG" alt="..." />
+        </div>
+        <!-- akhir left side -->
+
+        <!-- sisi kanan -->
+        <div class="p-5 d-block col-md-5 m-auto" style="text-align: justify">
+          <img src="Materi/Tabel Kuartil.PNG" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- content 9 -->
+    <div class="container text-light" style="margin-top: 150px">
+      <div class="content m-auto row p-3" data-aos="fade-up">
+        <h1 class="primary-color text-center">BoxPlot</h1>
+        <p class="pt-3 mx-auto" style="text-align: center">
+          1. Tarik Garis dengan menggukanan nilai data terkecil menuju terbesar <br />
+          2. Gunakan Data Kuartil 1, 2 dan 3 untuk membuat Kotak pada boxplot <br />
+          3. Setelah membuat Kotak tersebut maka dapat menghasilakan tabel boxplot seperti berikut.
+        </p>
+        <img src="Materi/BoxPlot.jpeg" class="w-50 m-auto" alt="" />
+      </div>
+    </div>
+    <hr />
+
+    <!-- Content 10 -->
+    <div class="container" id="desil">
+      <div class="row text-center text-dark rounded-3 py-3" style="background-color: whitesmoke">
+        <h1 class="text-center text-dark">Tahapan Pembuatan Desil</h1>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="one-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Kelas Desil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">Rumus kelas Desil sebagai berikut:</p>
+          <img src="Materi/Kelas Desil.PNG" class="w-50" alt="" />
+        </div>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="two-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Tepi bawah Desil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">Menentukan tepi bawah kelas Desil dengan mengurangi batas bawah kelas Desil dengan 0,5</p>
+        </div>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="three-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Frekuensi Kumulatif Sebelum Kelas Desil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">fk meruapakan frekuensi sebelum kelas desil, berarti 3 untuk kelas D1, 19 untuk kelas D2 dan D3</p>
+        </div>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="four-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menghitung Desil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">Menentukan frekuensi kelas desil dan panjang kelas (c), kemudian memasukkan semua unsurnya ke dalam formula berikut:</p>
+          <img src="Materi/Rumus Desil.PNG" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- content 11 -->
+    <div class="container text-light" style="margin-top: 150px">
+      <div class="content row p-3" data-aos="fade-up">
+        <h1 class="primary-color text-center">Desil</h1>
+        <p class="pt-3 mx-auto text-center">Memasukan Nilai-nilai yang sudah didapatkan pada langkah sebelumnya</p>
+        <!-- left side -->
+        <div class="col-md-6 left">
+          <img class="d-block m-auto w-50" src="Materi/Hitungan Desil.PNG" alt="..." />
+        </div>
+        <!-- akhir left side -->
+
+        <!-- sisi kanan -->
+        <div class="p-5 d-block col-md-5 m-auto" style="text-align: justify">
+          <img src="Materi/Tabel Desil.PNG" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- content 12 -->
+    <div class="container" id="persentil">
+      <div class="row text-center text-dark rounded-3 py-3" data-aos="fade-up" style="background-color: whitesmoke">
+        <h1 class="text-center text-dark">Tahapan Pembuatan Persentil</h1>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="one-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Kelas Persentil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">Rumus kelas Persentil sebagai berikut:</p>
+          <img src="Materi/Kelas Persentil.PNG" class="w-50" alt="" />
+        </div>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="two-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Tepi bawah Persentil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">Menentukan tepi bawah kelas Persentil dengan mengurangi batas bawah kelas Persentil dengan 0,5</p>
+        </div>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="three-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menentukan Frekuensi kumulatif Sebelum Kelas Persentil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">fk meruapakan frekuensi sebelum kelas persentil, berarti 0 untuk kelas P1, P2 dan P3</p>
+        </div>
+        <div class="col-md-3">
+          <img data-aos="zoom-in" src="four-unscreen.gif" alt="" width="100px" height="100px" />
+          <h6 class="fw-bold text-center">Menghitung Persentil</h6>
+          <p data-aos="zoom-in" style="text-align: justify">Menentukan frekuensi kelas desil dan panjang kelas (c), kemudian memasukkan semua unsurnya ke dalam formula berikut:</p>
+          <img src="Materi/Rumus persentil.PNG" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- content 13 -->
+    <div class="container text-light" style="margin-top: 150px">
+      <div class="content row p-3" data-aos="fade-up">
+        <h1 class="primary-color text-center">Persentil</h1>
+        <p class="pt-3 mx-auto text-center">Memasukan Nilai-nilai yang sudah didapatkan pada langkah sebelumnya</p>
+        <!-- left side -->
+        <div class="col-md-6 left">
+          <img class="d-block m-auto w-75" src="Materi/Hitungan Persentil.PNG" alt="..." />
+        </div>
+        <!-- akhir left side -->
+
+        <!-- sisi kanan -->
+        <div class="p-5 d-block col-md-5 m-auto" style="text-align: justify">
+          <img src="Materi/Tabel Persentil.PNG" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <section>
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </section>
+  </body>
+</html>
+
+<!-- JS CODE -->
+<!-- configure aos Animation -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Sticky Navbar -->
+<script>
+  var nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 100) {
+      nav.classList.add("bg-light", "shadow", "nav-color");
+    } else {
+      nav.classList.remove("bg-dark", "shadow");
+    }
+  });
+</script>
+
+<!-- loader  -->
+<script>
+  var loader;
+  function loadNow(opacity) {
+    if (opacity <= 0) {
+      displayContent();
+    } else {
+      loader.style.opacity = opacity;
+      window.setTimeout(function () {
+        loadNow(opacity - 0.05);
+      }, 100);
+    }
+  }
+
+  function displayContent() {
+    loader.style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    loader = document.getElementById("loader");
+    loadNow(1);
+  });
+</script>
+
+<!-- text Animation -->
+<script>
+  anime({
+    targets: "#texts path",
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: "easeInOutSine",
+    duration: 1500,
+    delay: function (el, i) {
+      return i * 90;
+    },
+    direction: "alternate",
+    loop: true,
+  });
+</script>

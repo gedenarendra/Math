@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Math</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="body1">
+    <!-- Load -->
+    <div id="loader"></div>
+
+    <!-- Parallax -->
+    <header class="parallax-head1">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand fs-5" style="font-family: diary" href="#"> Math Statiska</a>
+          <!-- Toggle Button -->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- SideBar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- Sidebar Header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Math Statiska</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- Sidebar Body -->
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-1 fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Distribusi Frekuensi </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Distribusi Frekuensi.html">Distribusi Frekuensi</a></li>
+                    <li><a class="dropdown-item" href="Distribusi Frekuensi.html#Tabel_distribusi_frekuensi">Tabel Frekuensi</a></li>
+                    <li><a class="dropdown-item" href="Distribusi Frekuensi.html#Tahapan_distribusi_frekuensi">Tahapan-Tahapan</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ogive </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="ogive.html">Ogive</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Naik</a></li>
+                    <li><a class="dropdown-item" href="ogive.html#ogive-naik_turun">Ogive Turun</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="Histogram & Poligon.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Histogram & Poligon </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html">Histogram & Poligon</a></li>
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html#step">Tahapan-Tahapan</a></li>
+                    <li><a class="dropdown-item" href="Histogram & Poligon.html#histogram">Histogram & Poligon</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lainnya </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-black-50 text-center" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pemusatan Data</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Pemusatan_data.html">Pemusatan Data</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#mean">Mean</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#median">Median</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#modus">Modus</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#kuartil">Kuartil</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#desil">Desil</a></li>
+                        <li><a class="dropdown-item" href="Pemusatan_data.html#persentil">Persentil</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-black-50 text-center" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Penyebaran Data</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Penyebaran_data.html">Penyebaran Data</a></li>
+                        <li><a class="dropdown-item" href="Penyebaran_data.html#simpangan_rata-rata">Simpangan Rata-rata</a></li>
+                        <li><a class="dropdown-item" href="Penyebaran_data.html#ragam">Ragam</a></li>
+                        <li><a class="dropdown-item" href="Penyebaran_data.html#simpangan_baku">simpangan Baku</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Container -->
+      <div class="container">
+        <div class="header-content text-center">
+          <a href="#">
+            <img src="logo smandong.png" width="300" class="d-block mx-auto" />
+          </a>
+          <svg id="texts" width="231" height="21" viewBox="0 0 231 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M226.257 19.7164V20.2164H226.757H228.848H229.348V19.7164V6.10447V5.60447H228.848H226.757H226.257V6.10447V19.7164ZM226.42 3.78015L226.42 3.78017L226.423 3.78362C226.812 4.14899 227.286 4.33582 227.82 4.33582C228.354 4.33582 228.826 4.14932 229.21 3.7819C229.601 3.41423 229.809 2.95104 229.809 2.41791C229.809 1.88479 229.601 1.42159 229.21 1.05393C228.826 0.686505 228.354 0.5 227.82 0.5C227.286 0.5 226.812 0.686828 226.423 1.0522L226.423 1.05218L226.42 1.05567C226.035 1.42458 225.832 1.8874 225.832 2.41791C225.832 2.94842 226.035 3.41124 226.42 3.78015Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M223.497 9.63406L224.001 9.49124L223.835 8.99398C223.48 7.93558 222.873 7.071 222.016 6.41653C221.133 5.73703 219.954 5.42722 218.54 5.42722C217.523 5.42722 216.596 5.60621 215.766 5.97559L215.766 5.97558L215.765 5.97618C214.946 6.3438 214.281 6.85859 213.787 7.52625L213.787 7.52624L213.785 7.52886C213.288 8.2097 213.042 8.99355 213.042 9.86191C213.042 10.9133 213.37 11.8214 214.043 12.5498L214.043 12.5498L214.046 12.5533C214.724 13.2721 215.745 13.7631 217.042 14.0705L217.043 14.0707L219.312 14.6024L219.313 14.6026C219.951 14.7513 220.36 14.9636 220.6 15.199L220.603 15.2022C220.833 15.4241 220.946 15.6886 220.946 16.0298C220.946 16.418 220.766 16.7823 220.285 17.1311C219.824 17.4636 219.165 17.6567 218.256 17.6567C217.469 17.6567 216.883 17.4885 216.458 17.1962C216.048 16.9102 215.75 16.4723 215.585 15.834L215.461 15.3535L214.98 15.4739L212.995 15.9701L212.528 16.0868L212.627 16.5576C212.893 17.8324 213.539 18.8312 214.568 19.5129C215.58 20.1828 216.832 20.5 218.292 20.5C219.405 20.5 220.404 20.3134 221.277 19.9252C222.143 19.5405 222.838 19.0045 223.34 18.3086C223.852 17.6066 224.109 16.806 224.109 15.9235C224.109 14.8585 223.77 13.9497 223.07 13.2418C222.384 12.5429 221.379 12.0588 220.112 11.7512C220.111 11.7511 220.111 11.7511 220.111 11.751L218.094 11.2556C218.093 11.2555 218.093 11.2554 218.093 11.2553C217.317 11.0612 216.807 10.8319 216.512 10.5963C216.263 10.3978 216.133 10.1364 216.133 9.75557C216.133 9.36036 216.305 9.02298 216.741 8.72297L216.742 8.72233C217.196 8.40839 217.784 8.23505 218.54 8.23505C219.1 8.23505 219.515 8.32541 219.814 8.47471C220.145 8.64032 220.387 8.84133 220.558 9.07064L220.558 9.07071L220.565 9.07941C220.768 9.33977 220.916 9.60043 221.014 9.8612L221.176 10.2908L221.618 10.1658L223.497 9.63406Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M201.212 20.2164H201.712V19.7164V11.528C201.712 10.7989 201.851 10.2118 202.104 9.74588C202.363 9.26894 202.707 8.91802 203.138 8.67761C203.582 8.43358 204.094 8.30594 204.686 8.30594C205.543 8.30594 206.162 8.56758 206.605 9.0487L206.605 9.04871L206.607 9.0505C207.052 9.52877 207.306 10.2255 207.306 11.2089V19.7164V20.2164H207.806H209.897H210.397V19.7164V11.0671C210.397 9.85811 210.197 8.81725 209.767 7.97018C209.342 7.12577 208.735 6.47987 207.947 6.05493C207.171 5.63077 206.28 5.42722 205.289 5.42722C204.195 5.42722 203.253 5.65331 202.5 6.14605C202.178 6.35358 201.892 6.59185 201.642 6.86027V6.10445V5.60445H201.142H199.121H198.621V6.10445V19.7164V20.2164H199.121H201.212Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M186.646 19.5567L186.649 19.5586C187.692 20.1932 188.917 20.5 190.303 20.5C191.276 20.5 192.169 20.3502 192.973 20.0414L192.973 20.0414L192.976 20.0401C193.774 19.7275 194.456 19.2885 195.012 18.7188L195.014 18.7167C195.57 18.141 195.968 17.4703 196.204 16.7097L196.357 16.219L195.862 16.0801L193.842 15.513L193.399 15.3889L193.238 15.8188C193.084 16.2298 192.871 16.5611 192.604 16.8235C192.334 17.0832 192.011 17.2823 191.627 17.419C191.245 17.5511 190.806 17.6212 190.303 17.6212C189.534 17.6212 188.881 17.4552 188.33 17.1391C187.782 16.8194 187.348 16.3542 187.028 15.7257C186.805 15.2756 186.656 14.7425 186.59 14.1194H195.94H196.44V13.6194V12.7332C196.44 11.4222 196.266 10.2873 195.901 9.3444C195.542 8.41995 195.052 7.65478 194.42 7.06802C193.804 6.49148 193.115 6.06914 192.353 5.80858L192.192 6.27935L192.353 5.80858C191.611 5.55501 190.856 5.42722 190.091 5.42722C188.776 5.42722 187.604 5.75073 186.592 6.41243C185.593 7.06328 184.82 7.96926 184.27 9.11359L184.269 9.11465C183.724 10.2566 183.458 11.5614 183.458 13.0168C183.458 14.4719 183.724 15.7718 184.27 16.9031L184.27 16.9031L184.272 16.9062C184.825 18.0319 185.617 18.9199 186.646 19.5567ZM193.288 11.3115H186.625C186.696 10.9404 186.816 10.5848 186.985 10.2434C187.272 9.66464 187.678 9.19931 188.209 8.84042L188.209 8.83982C188.724 8.48984 189.344 8.30594 190.091 8.30594C190.768 8.30594 191.328 8.461 191.792 8.75229L191.792 8.7523L191.794 8.75355C192.275 9.05232 192.644 9.45756 192.905 9.97918L192.905 9.97918L192.906 9.98266C193.108 10.3771 193.236 10.8184 193.288 11.3115Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M178.674 5.60446H178.174V6.10446V14.1511C178.174 14.9299 178.004 15.5248 177.702 15.9709L177.702 15.9709L177.7 15.974C177.378 16.4568 176.988 16.8017 176.532 17.0252L176.53 17.0261C176.05 17.2631 175.597 17.3731 175.165 17.3731C174.424 17.3731 173.844 17.1272 173.384 16.6435C172.935 16.1653 172.687 15.5066 172.687 14.6119V6.10446V5.60446H172.187H170.096H169.596V6.10446V14.7537C169.596 15.9624 169.793 17.0046 170.215 17.8561L170.216 17.8574C170.633 18.6919 171.218 19.3371 171.975 19.7695L171.978 19.7711C172.723 20.1903 173.565 20.3936 174.492 20.3936C175.598 20.3936 176.557 20.1354 177.333 19.5834L177.333 19.5834L177.336 19.5817C177.648 19.3568 177.928 19.1098 178.174 18.8407V19.7164V20.2164H178.674H180.766H181.266V19.7164V6.10446V5.60446H180.766H178.674Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M159.113 19.7164V14.8407L160.021 13.9998L164.779 20.0262L164.929 20.2164H165.171H167.83H168.864L168.221 19.4059L162.32 11.9565L167.76 6.45606L168.602 5.60448H167.404H164.816H164.607L164.46 5.75407L159.113 11.1962V1.56717V1.06717H158.613H156.522H156.022V1.56717V19.7164V20.2164H156.522H158.613H159.113V19.7164Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M144.047 19.5567L144.05 19.5586C145.093 20.1932 146.317 20.5 147.704 20.5C148.677 20.5 149.569 20.3502 150.374 20.0414L150.374 20.0414L150.377 20.0401C151.174 19.7275 151.856 19.2885 152.413 18.7188L152.415 18.7167C152.971 18.141 153.369 17.4703 153.605 16.7097L153.757 16.219L153.263 16.0801L151.242 15.513L150.8 15.3889L150.639 15.8188C150.485 16.2298 150.272 16.5611 150.005 16.8235C149.735 17.0832 149.411 17.2823 149.027 17.419C148.645 17.5511 148.206 17.6212 147.704 17.6212C146.934 17.6212 146.282 17.4552 145.73 17.1391C145.183 16.8194 144.749 16.3542 144.429 15.7257C144.206 15.2756 144.057 14.7425 143.99 14.1194H153.34H153.84V13.6194V12.7332C153.84 11.4222 153.667 10.2873 153.301 9.3444C152.943 8.41995 152.453 7.65478 151.82 7.06802C151.205 6.49148 150.516 6.06914 149.753 5.80858L149.592 6.2811L149.753 5.80858C149.012 5.55501 148.257 5.42722 147.491 5.42722C146.177 5.42722 145.005 5.75073 143.992 6.41243C142.994 7.06328 142.22 7.96926 141.67 9.11359L141.67 9.11465C141.124 10.2566 140.859 11.5614 140.859 13.0168C140.859 14.4719 141.124 15.7718 141.671 16.9031L141.671 16.9031L141.672 16.9062C142.226 18.0319 143.018 18.9199 144.047 19.5567ZM150.688 11.3115H144.026C144.097 10.9404 144.217 10.5848 144.386 10.2434C144.673 9.66464 145.079 9.19931 145.609 8.84042L145.61 8.83982C146.125 8.48984 146.745 8.30594 147.491 8.30594C148.168 8.30594 148.729 8.461 149.193 8.75229L149.193 8.7523L149.195 8.75355C149.676 9.05232 150.045 9.45756 150.305 9.97918L150.305 9.97918L150.307 9.98266C150.508 10.3771 150.637 10.8184 150.688 11.3115Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M132.626 19.7164V20.2164H133.126H135.218H135.718V19.7164V11.1026C135.718 10.5724 135.844 10.1187 136.086 9.72651C136.339 9.31906 136.68 9.00192 137.117 8.77083L137.117 8.77084L137.119 8.76985C137.558 8.53544 138.066 8.41231 138.656 8.41231C138.909 8.41231 139.144 8.43115 139.363 8.46754L139.363 8.46771L139.376 8.46954C139.637 8.50603 139.771 8.5292 139.811 8.53917L140.432 8.69449V8.0541V5.92723V5.47474L139.982 5.42972C139.845 5.41601 139.656 5.4068 139.422 5.40081C139.189 5.39484 138.993 5.39178 138.833 5.39178C137.927 5.39178 137.1 5.62638 136.364 6.10089L136.634 6.51811L136.364 6.10089C136.097 6.27363 135.857 6.46721 135.647 6.68149V6.10447V5.60447H135.147H133.126H132.626V6.10447V19.7164Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M118.409 19.7164V20.2164H118.909H121.107H121.607V19.7164V12.0989H128.977H129.477V11.5989V9.64925V9.14925H128.977H121.607V4.01679H129.792H130.292V3.51679V1.56717V1.06717H129.792H118.909H118.409V1.56717V19.7164Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M105.185 19.7164V20.2164H105.685H107.777H108.277V19.7164V6.10447V5.60447H107.777H105.685H105.185V6.10447V19.7164ZM105.348 3.78015L105.348 3.78017L105.352 3.78362C105.74 4.14899 106.215 4.33582 106.749 4.33582C107.282 4.33582 107.755 4.14932 108.139 3.7819C108.529 3.41423 108.737 2.95103 108.737 2.41791C108.737 1.88479 108.529 1.4216 108.139 1.05393C107.755 0.686501 107.282 0.5 106.749 0.5C106.215 0.5 105.74 0.686828 105.352 1.0522L105.352 1.05218L105.348 1.05567C104.963 1.42459 104.76 1.88742 104.76 2.41791C104.76 2.9484 104.963 3.41123 105.348 3.78015Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M102.425 9.63406L102.93 9.49123L102.763 8.99398C102.408 7.93558 101.802 7.071 100.945 6.41653C100.061 5.73704 98.8827 5.42722 97.468 5.42722C96.4517 5.42722 95.5242 5.60621 94.6947 5.97559L94.6947 5.97558L94.6933 5.97618C93.8743 6.3438 93.209 6.85859 92.7149 7.52625L92.7149 7.52624L92.713 7.52886C92.216 8.2097 91.9699 8.99354 91.9699 9.86191C91.9699 10.9133 92.2979 11.8214 92.9712 12.5498L92.9712 12.5498L92.9746 12.5533C93.6523 13.2721 94.6734 13.7631 95.9703 14.0705L95.9715 14.0707L98.2401 14.6024L98.2409 14.6026C98.8796 14.7513 99.2884 14.9636 99.5281 15.199L99.5314 15.2022C99.7615 15.4241 99.8748 15.6886 99.8748 16.0298C99.8748 16.418 99.6947 16.7823 99.2134 17.1311C98.7524 17.4636 98.093 17.6567 97.1845 17.6567C96.3972 17.6567 95.8115 17.4885 95.3866 17.1962C94.9766 16.9102 94.6785 16.4723 94.5137 15.834L94.3897 15.3535L93.9083 15.4739L91.9233 15.9701L91.4567 16.0868L91.5551 16.5576C91.8218 17.8324 92.4672 18.8312 93.4965 19.5129C94.5079 20.1828 95.7599 20.5 97.2199 20.5C98.3329 20.5 99.3321 20.3134 100.206 19.9252C101.071 19.5405 101.766 19.0045 102.268 18.3086C102.781 17.6066 103.037 16.806 103.037 15.9235C103.037 14.8585 102.699 13.9497 101.998 13.2418C101.312 12.5429 100.307 12.0588 99.04 11.7512C99.0398 11.7511 99.0396 11.7511 99.0393 11.751L97.0221 11.2556C97.0218 11.2555 97.0215 11.2554 97.0212 11.2553C96.245 11.0612 95.7357 10.8319 95.4401 10.5963C95.191 10.3978 95.0613 10.1364 95.0613 9.75557C95.0613 9.36034 95.233 9.02297 95.6689 8.72297L95.6699 8.72233C96.1239 8.40839 96.7126 8.23505 97.468 8.23505C98.0278 8.23505 98.4435 8.32541 98.7421 8.47471C99.0733 8.64032 99.3155 8.84133 99.4864 9.07064L99.4863 9.07071L99.4931 9.07941C99.6962 9.33978 99.844 9.60045 99.9424 9.8612L100.105 10.2908L100.546 10.1658L102.425 9.63406Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M86.7251 5.60446H86.2251V6.10446V14.1511C86.2251 14.9299 86.0551 15.5248 85.7529 15.9709L85.7529 15.9709L85.7508 15.974C85.429 16.4568 85.0393 16.8017 84.5824 17.0252L84.5805 17.0261C84.1012 17.2631 83.6478 17.3731 83.2158 17.3731C82.4748 17.3731 81.8946 17.1272 81.4346 16.6435C80.9856 16.1653 80.7382 15.5066 80.7382 14.6119V6.10446V5.60446H80.2382H78.1468H77.6468V6.10446V14.7537C77.6468 15.9624 77.8436 17.0046 78.266 17.8561L78.2667 17.8574C78.684 18.6919 79.2689 19.3371 80.0256 19.7695L80.0285 19.7711C80.7737 20.1903 81.6162 20.3936 82.5423 20.3936C83.6485 20.3936 84.6073 20.1354 85.3841 19.5834L85.3842 19.5834L85.3865 19.5817C85.6991 19.3568 85.9791 19.1098 86.2251 18.8407V19.7164V20.2164H86.7251H88.8166H89.3166V19.7164V6.10446V5.60446H88.8166H86.7251Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M71.9363 15.3754L71.937 15.3734C72.2138 14.6461 72.3562 13.8272 72.3562 12.9104C72.3562 12.0049 72.2165 11.2045 71.9465 10.5022L71.9448 10.4979L71.9448 10.4979C71.6845 9.80209 71.2974 9.27192 70.7902 8.88642L70.7857 8.88304L70.7857 8.88301C70.3049 8.50902 69.6836 8.30597 68.8861 8.30597C68.1231 8.30597 67.5182 8.4978 67.0402 8.85387L67.0375 8.85584L67.0375 8.85583C66.5464 9.21669 66.1628 9.73042 65.8966 10.4225L65.8961 10.4237C65.6278 11.1161 65.4868 11.9416 65.4868 12.9104C65.4868 13.8901 65.6304 14.734 65.9054 15.4514C66.1782 16.1574 66.5669 16.6883 67.0619 17.0675C67.5407 17.4286 68.1389 17.6213 68.8861 17.6213C69.6686 17.6213 70.2836 17.417 70.7655 17.0373L71.9363 15.3754ZM71.9363 15.3754C71.6692 16.0858 71.2767 16.6333 70.7655 17.0373L71.9363 15.3754ZM62.4309 19.7164V20.2164H62.9309H64.9514H65.4514V19.7164V18.8591C65.4527 18.8609 65.454 18.8626 65.4553 18.8644L65.4553 18.8644L65.4576 18.8674C65.7926 19.3071 66.2557 19.6821 66.8245 20.0017L66.8282 20.0038C67.454 20.3483 68.2469 20.5 69.1697 20.5C70.3927 20.5 71.4917 20.1896 72.4492 19.5577L72.4512 19.5564C73.4042 18.9211 74.1406 18.0309 74.6653 16.9058L74.6657 16.9048C75.193 15.7677 75.4476 14.4433 75.4476 12.9459C75.4476 11.4597 75.1928 10.1439 74.6653 9.01258C74.1401 7.88624 73.3996 6.99818 72.4391 6.36866C71.4755 5.7371 70.368 5.42724 69.1342 5.42724C68.2007 5.42724 67.4018 5.58151 66.779 5.93508C66.2673 6.22337 65.8428 6.5608 65.5223 6.9543V1.56717V1.06717H65.0223H62.9309H62.4309V1.56717V19.7164Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M56.2253 19.7164V20.2164H56.7253H58.8167H59.3167V19.7164V6.10447V5.60447H58.8167H56.7253H56.2253V6.10447V19.7164ZM56.388 3.78015L56.388 3.78017L56.3917 3.78362C56.7804 4.14899 57.2546 4.33582 57.7887 4.33582C58.3222 4.33582 58.7948 4.14932 59.1787 3.7819C59.569 3.41423 59.7775 2.95103 59.7775 2.41791C59.7775 1.88479 59.569 1.42159 59.1787 1.05393C58.7948 0.686503 58.3222 0.5 57.7887 0.5C57.2546 0.5 56.7804 0.686828 56.3917 1.0522L56.3917 1.05218L56.388 1.05567C56.0034 1.42458 55.7999 1.88741 55.7999 2.41791C55.7999 2.94841 56.0034 3.41123 56.388 3.78015Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M46.9402 19.7164V20.2164H47.4402H49.5316H50.0316V19.7164V11.1026C50.0316 10.5724 50.1578 10.1187 50.3997 9.72651C50.6533 9.31905 50.9943 9.00192 51.4314 8.77083L51.4314 8.77084L51.4332 8.76985C51.8721 8.53544 52.3803 8.41231 52.97 8.41231C53.223 8.41231 53.4582 8.43115 53.6765 8.46754L53.6765 8.46771L53.6896 8.46954C53.9511 8.50603 54.085 8.5292 54.1249 8.53917L54.7461 8.69449V8.0541V5.92723V5.47474L54.2959 5.42972C54.1589 5.41601 53.9697 5.4068 53.7361 5.40081C53.5033 5.39484 53.3067 5.39178 53.1473 5.39178C52.2412 5.39178 51.4135 5.62638 50.6784 6.10089L50.9495 6.52098L50.6784 6.10089C50.4107 6.27363 50.1711 6.46722 49.9607 6.6815V6.10447V5.60447H49.4607H47.4402H46.9402V6.10447V19.7164Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M44.7942 6.10445V5.60445H44.2942H41.8875V2.84326V2.34326H41.3875H39.2961H38.7961V2.84326V5.60445H37.2401H36.7401V6.10445V7.87684V8.37684H37.2401H38.7961V16.3843C38.7961 17.2536 38.998 18.0168 39.4368 18.6396L39.4368 18.6396L39.439 18.6427C39.8603 19.2313 40.3951 19.6764 41.0395 19.9681L41.0413 19.9689C41.6694 20.2502 42.3178 20.3936 42.9826 20.3936C43.3914 20.3936 43.7528 20.3632 44.0563 20.2933C44.3181 20.2383 44.5426 20.1794 44.7179 20.1137L45.1263 19.9605L45.03 19.5351L44.6046 17.6563L44.497 17.1809L44.0189 17.2765L43.6747 17.3453C43.5635 17.3624 43.4061 17.3731 43.1953 17.3731C42.9428 17.3731 42.7072 17.3348 42.4858 17.2602C42.34 17.2049 42.2008 17.0955 42.0742 16.8907C41.9699 16.7075 41.8875 16.3711 41.8875 15.8171V8.37684H44.2942H44.7942V7.87684V6.10445Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M35.1143 9.63406L35.6189 9.49124L35.4521 8.99398C35.0972 7.93558 34.491 7.071 33.6339 6.41653C32.7501 5.73704 31.5719 5.42722 30.1572 5.42722C29.1409 5.42722 28.2133 5.60621 27.3838 5.97559L27.3838 5.97558L27.3825 5.97618C26.5634 6.3438 25.8981 6.85859 25.4041 7.52625L25.4041 7.52624L25.4022 7.52886C24.9051 8.2097 24.6591 8.99355 24.6591 9.86191C24.6591 10.9133 24.9871 11.8214 25.6604 12.5498L25.6604 12.5498L25.6638 12.5533C26.3415 13.2721 27.3625 13.7631 28.6595 14.0705L28.6606 14.0707L30.9293 14.6024L30.9301 14.6026C31.5688 14.7513 31.9775 14.9636 32.2173 15.199L32.2206 15.2022C32.4506 15.4241 32.5639 15.6886 32.5639 16.0298C32.5639 16.418 32.3839 16.7823 31.9026 17.1311C31.4416 17.4636 30.7821 17.6567 29.8736 17.6567C29.0863 17.6567 28.5007 17.4885 28.0758 17.1962C27.6658 16.9102 27.3676 16.4723 27.2029 15.834L27.0789 15.3535L26.5975 15.4739L24.6124 15.9701L24.1458 16.0868L24.2443 16.5576C24.511 17.8324 25.1564 18.8312 26.1857 19.5129C27.1971 20.1828 28.4491 20.5 29.9091 20.5C31.0221 20.5 32.0212 20.3134 32.8948 19.9252C33.7602 19.5405 34.4551 19.0045 34.9574 18.3086C35.47 17.6066 35.7262 16.806 35.7262 15.9235C35.7262 14.8585 35.3878 13.9497 34.6873 13.2418C34.0015 12.5429 32.9961 12.0588 31.7292 11.7512C31.7289 11.7511 31.7287 11.7511 31.7285 11.751L29.7113 11.2556C29.711 11.2555 29.7107 11.2554 29.7103 11.2553C28.9342 11.0612 28.4248 10.8319 28.1293 10.5963C27.8801 10.3978 27.7505 10.1364 27.7505 9.75557C27.7505 9.36035 27.9222 9.02297 28.3581 8.72297L28.359 8.72233C28.813 8.40839 29.4018 8.23505 30.1572 8.23505C30.717 8.23505 31.1327 8.32541 31.4313 8.47471C31.7625 8.64032 32.0047 8.84133 32.1756 9.07064L32.1755 9.07071L32.1823 9.07941C32.3854 9.33978 32.5332 9.60045 32.6316 9.8612L32.7937 10.2908L33.2355 10.1658L35.1143 9.63406Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M18.9143 19.7164V20.2164H19.4143H21.5057H22.0057V19.7164V6.10447V5.60447H21.5057H19.4143H18.9143V6.10447V19.7164ZM19.0771 3.78015L19.0771 3.78017L19.0807 3.78362C19.4694 4.14899 19.9436 4.33582 20.4778 4.33582C21.0112 4.33582 21.4838 4.14932 21.8678 3.7819C22.258 3.41423 22.4666 2.95103 22.4666 2.41791C22.4666 1.88479 22.258 1.42159 21.8678 1.05393C21.4838 0.686502 21.0112 0.5 20.4778 0.5C19.9436 0.5 19.4694 0.686827 19.0807 1.0522L19.0807 1.05218L19.0771 1.05567C18.6925 1.42459 18.489 1.88742 18.489 2.41791C18.489 2.9484 18.6925 3.41123 19.0771 3.78015Z"
+              stroke="#44B6F4"
+            />
+            <path
+              d="M1.26136 19.7164V20.2164H1.76136H7.3621C9.27053 20.2164 10.9254 19.8401 12.3046 19.0619L12.3061 19.061C13.6828 18.2779 14.7324 17.1572 15.4491 15.7113L15.4495 15.7105C16.1642 14.2624 16.5114 12.5554 16.5114 10.6063C16.5114 8.66943 16.1672 6.97689 15.458 5.54584C14.7488 4.10878 13.7217 2.99659 12.38 2.22428C11.0366 1.44503 9.43963 1.06717 7.61024 1.06717H1.76136H1.26136V1.56717V19.7164ZM4.45912 17.7668V17.2668H3.95912V17.7668H4.45912ZM3.95912 4.01679H4.45912V3.51679H3.95912V4.01679Z"
+              stroke="#44B6F4"
+            />
+          </svg>
+
+          <a href="#Tabel_distribusi_frekuensi">
+            <div class="scroll-down"></div>
+          </a>
+        </div>
+      </div>
+      <!-- end of container -->
+    </header>
+
+    <!-- content 1 -->
+    <div class="container text-light" id="Tabel_distribusi_frekuensi">
+      <div class="content row p-5 pt-md-5 rounded-3" data-aos="fade-down">
+        <!-- left side -->
+        <div class="col-md-6 left">
+          <h1 class="primary-color text-center">Tabel Distribusi Frekuensi</h1>
+          <p class="pt-3 mx-auto" style="text-align: justify">
+            Tabel distribusi frekuensi adalah sebuah tabel yang berisi nilai-nilai data, dengan nilai-nilai tersebut dikelompokkan ke dalam interval-interval kelas dan tiap interval kelasnya masing- masing mempunyai bilangan frekuensi
+            banyaknya angka yang ada di dalam kelas tersebut. Tabel distribusi frekuensi akan menunjukan nilai dan frekuensi dari nilai tersebut.
+          </p>
+
+          <p class="pt-3 mx-auto" style="text-align: justify">
+            Tabel distribusi frekuensi dapat dibuat melalui 4 tahap utama. Masing-masing tahap dilakukan untuk menentukan nilai data dalam bentuk kelompok kemudian menentukan frekuensi masing-masing kelasnya.
+          </p>
+        </div>
+        <!-- akhir left side -->
+
+        <!-- sisi kanan -->
+        <div class="col-md-5 m-auto" style="text-align: justify">
+          <img src="Materi/Tabel Distribusi Frekuensi.png" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- content 2 -->
+    <div class="row m-4 text-center" id="Tahapan_distribusi_frekuensi">
+      <div class="col-md-3">
+        <div class="card">
+          <img data-aos="zoom-in" src="one-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <p data-aos="zoom-in">Menentukan jangkauan atau j, dimana j = data terbesar- data terkecil</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img data-aos="zoom-in" src="two-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <p data-aos="zoom-in">Menentukan banyak kelas atau k, dimana k = 1 + 3,3 log n</p>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img data-aos="zoom-in" src="three-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <p data-aos="zoom-in">Menentukan panjang interval kelas atau i, dimana i = j/k</p>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img data-aos="zoom-in" src="four-unscreen.gif" alt="" width="100px" height="100px" />
+          <div class="card-body">
+            <p data-aos="zoom-in">Menentukan masing-masing kelas, lalu dibuatkan ke dalam tabel</p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content 3 -->
+    <div class="container text-light" style="margin-top: 150px">
+      <div class="content row p-5 text-center" data-aos="fade-up">
+        <!-- left side -->
+        <div class="col-md-6 left">
+          <h2>1. Jangkauan</h2>
+          <p style="text-align: justify">
+            Jangkauan = Data Besar - Data Kecil
+            <br />
+            Jangkauan = 50 - 31
+            <br />
+            Jangkauan = 19
+          </p>
+          <br />
+          <hr />
+          <h2>2. Banyak Kelas</h2>
+          <p style="text-align: justify">
+            Banyak Kelas = 1 + 3,3 log(Banyak Data)
+            <br />
+            Banyak Kelas = 1 + 3,3log(100)
+            <br />
+            Banyak Kelas = 1 + 3,3 x 2
+            <br />
+            Banyak Kelas = 1 + 6,6
+            <br />
+            Banyak Kelas = 7,6
+            <br />
+            Banyak Kelas = 8
+          </p>
+          <br />
+          <hr />
+        </div>
+        <!-- akhir left side -->
+
+        <!-- sisi kanan -->
+        <div class="col-md-6 kanan_tengah">
+          <h2>3. Panjang Interval</h2>
+          <p style="text-align: justify">
+            Panjang Interval = <sup>Jangkauan</sup>&frasl;<sub>Banyak Kelas</sub>
+            <br />
+            Panjang Interval = <sup>19</sup>&frasl;<sub>8</sub>
+            <br />
+            Panjang Interval = 2,375
+            <br />
+            Panjang Interval = 3
+            <br />
+          </p>
+          <hr />
+          <h2>4. Pembuatan Tabel</h2>
+          <img src="Materi/Tabel Distribusi Frekuensi sudah disederhanakan.PNG" alt="" />
+          <br />
+          <br />
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <section>
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </section>
+  </body>
+</html>
+
+<!-- JS CODE -->
+<!-- configure aos Animation -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Sticky Navbar -->
+<script>
+  var nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 100) {
+      nav.classList.add("bg-light", "shadow", "nav-color");
+    } else {
+      nav.classList.remove("bg-dark", "shadow");
+    }
+  });
+</script>
+
+<!-- loader  -->
+<script>
+  var loader;
+  function loadNow(opacity) {
+    if (opacity <= 0) {
+      displayContent();
+    } else {
+      loader.style.opacity = opacity;
+      window.setTimeout(function () {
+        loadNow(opacity - 0.05);
+      }, 100);
+    }
+  }
+
+  function displayContent() {
+    loader.style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    loader = document.getElementById("loader");
+    loadNow(1);
+  });
+</script>
+
+<!-- text Animation -->
+<script>
+  anime({
+    targets: "#texts path",
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: "easeInOutSine",
+    duration: 1500,
+    delay: function (el, i) {
+      return i * 90;
+    },
+    direction: "alternate",
+    loop: true,
+  });
+</script>
